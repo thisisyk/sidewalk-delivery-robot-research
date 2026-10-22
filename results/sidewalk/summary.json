@@ -1,0 +1,125 @@
+{
+  "status": "complete_synthetic_mechanism_study",
+  "real_model": "original_development_selected_hist_gradient_boosting",
+  "model_fit_train_rows": 857,
+  "model_fit_eval_rows": 0,
+  "scenarios": 8,
+  "runs": 16,
+  "gallery_config": {
+    "scenario": "intersection",
+    "domain": "robot",
+    "threshold": 0.95568571118795,
+    "operators": 1,
+    "fleet": 6,
+    "seed": 42,
+    "density": 1.0,
+    "occlusion": true,
+    "fallback_enabled": true,
+    "assistance_module_enabled": true,
+    "assistance_action": "auto",
+    "duration_s": 120.0,
+    "dt": 0.5,
+    "service_s": 15.0
+  },
+  "new_real_data": false,
+  "simulated_obstacles_are_real_training_labels": false,
+  "counterfactual_reuse": {
+    "input_model_world_controller_unchanged": true,
+    "only_primary_operator_helper_revised": true,
+    "prior_comparison_sha256": "defcf3701bb5f2f896d8c5a149819501483fb4adc3e2b1ceb992dfb87be5189d",
+    "prior_gallery_sha256": "4f5abc8c0ed0260bb815b122e4ef80a5ee52cb99d1de6609ae5cd741028c8b09",
+    "prior_manifest_sha256": "ed8d9147975a63740f0edc6ec69d9f74b70b2fb9b8f43f84dce63d24586f97fe",
+    "reused_policy_names": [
+      "learned",
+      "fallback_only",
+      "all",
+      "no_assist"
+    ],
+    "off_visibility_unused_all_and_no_assist_summaries_not_exported": true
+  },
+  "unsupported_objects_mapped_to_vehicle": false,
+  "visibility_pair_interpretation": "conditional_on_one_seed_and_toy_world_not_real_sensor_evaluation",
+  "checks": [
+    {
+      "scenario": "intersection",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "intersection",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "left_turn",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "left_turn",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "blind_corner",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "blind_corner",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "t_junction",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "t_junction",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "trash",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "trash",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "construction",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "construction",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "crowd",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "crowd",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "mixed",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "mixed",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    }
+  ],
+  "publication_approval": "pending_user_review"
+}

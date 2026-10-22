@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "purpose": "independent_scalar_geometry_label_audit_no_model_tuning",
+  "source_file": "training.tfrecord-00000-of-01000",
+  "sample_selection": "first_20_complete_retained_scenes_in_cached_source_order_before_outcome_inspection",
+  "audited_scene_count": 20,
+  "source_sha256": "050b8f46e94351d0ca51213e196d5e550b6b1cecd05dce27f8d8ffff93121652",
+  "source_sha256_matches_frozen_cache": true,
+  "cache_sha256_matches_metadata": true,
+  "source_records_crc32c_verified": 496,
+  "source_crc_verification": "both_length_and_payload_CRC32C_for_every_record_in_shard",
+  "scalar_rectangle_pair_comparisons": 7068,
+  "complete_coverage_verified_count": 20,
+  "object_selection_verified": "nearest_16_current_valid_type123_within_50m_sorted_center_distance_then_id",
+  "clearance_absolute_tolerance_m": 1e-08,
+  "max_abs_current_min_clearance_error_m": 0.0,
+  "max_abs_future_min_clearance_error_m": 0.0,
+  "max_abs_selected_object_current_clearance_error_m": 0.0,
+  "thresholds": {
+    "1m": {
+      "label_mismatches": 0,
+      "eligibility_mismatches": 0,
+      "event_time_mismatches": 0,
+      "positive_count_in_audit": 4,
+      "eligible_count_in_audit": 19
+    },
+    "2m": {
+      "label_mismatches": 0,
+      "eligibility_mismatches": 0,
+      "event_time_mismatches": 0,
+      "positive_count_in_audit": 13,
+      "eligible_count_in_audit": 12
+    },
+    "3m": {
+      "label_mismatches": 0,
+      "eligibility_mismatches": 0,
+      "event_time_mismatches": 0,
+      "positive_count_in_audit": 15,
+      "eligible_count_in_audit": 9
+    }
+  },
+  "failure_counts": {},
+  "protocol_changed": false,
+  "model_trained_or_tuned": false,
+  "public_report_contains_raw_ids_or_coordinates": false,
+  "elapsed_seconds": 3.765
+}

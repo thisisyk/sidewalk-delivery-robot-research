@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "recorded_utc": "2026-10-22T19:57:43.969133+00:00",
+  "software_tests_passed": 68,
+  "gallery_source_and_input_hashes_match": true,
+  "original_experiment_code_and_results_unchanged": true,
+  "whole_body_saved_frame_domain_check": "pass",
+  "moving_pedestrian_tracks_across_scenes": 18,
+  "robot_saved_frames_audited": 11232,
+  "person_motion_uses_actual_coordinates": true,
+  "browser_review": {
+    "actual_local_service_updated": true,
+    "robot_only_interface": true,
+    "default_autoplay_observed": true,
+    "play_pause_scrub_checked": true,
+    "scenes_checked": [
+      "blind_corner",
+      "crowd"
+    ],
+    "crowd_positions_compared_at_seconds": [
+      14.5,
+      24.5
+    ],
+    "sidewalk_and_crosswalk_separate_from_motor_road": true,
+    "contact_and_incomplete_outcomes_visible": true,
+    "screenshot": "demo/sidewalk_browser_preview.png"
+  },
+  "deliverable_sha256": {
+    "demo/index.html": "97270d7446a7ae16618f85a7d69df12954426293c1a1ff35a19200cbadf30f93",
+    "demo/sidewalk_atlas.png": "501f3b7bea3e3ae0c4cca813a706050a66b0a691e29261758e57c3082a182853",
+    "demo/sidewalk_scenarios.gif": "4fdfaf56b2119ae6cd57835c3e4f7a130cc0906aa6c23601850bb7f7c78cf6b1",
+    "demo/sidewalk_scenarios.png": "91f2f86d123dafadf3f3b667b42ef326257eab0048d68638b98da2fada977fcc",
+    "demo/sidewalk_scenarios.manifest.json": "b6bb0f1a6fb2d7d84e894982b74f9fc2fc352da19a6781d738f85a30c6336f12",
+    "demo/sidewalk_browser_preview.png": "779aa7e186e02af532c0c1a714c29f6748cb5176c0d15c01a388410e61fd62d8"
+  },
+  "domain_shift": "original road vehicle HistGB; no robot training or robot validation",
+  "negative_outcomes_retained": true,
+  "continuous_time_or_real_safety_verified": false,
+  "cli_credentials_removed": true,
+  "publication_approval": "pending_user_review",
+  "uploaded": false
+}

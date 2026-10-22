@@ -1,0 +1,225 @@
+{
+  "audited_at_utc": "2026-10-22T05:50:47.494968+00:00",
+  "preparation": {
+    "rows": 2370,
+    "source_files": 22,
+    "raw_sha256_rechecked_files": 22,
+    "raw_sha256_recheck_requested": true,
+    "extraction_code_fingerprint_matches_current_files": "b4b4c7a1571e37e690d4ee9193771dc3a6fd4477de025c788c3891ff1500dbc5",
+    "stage_counts_total": {
+      "raw": 8910,
+      "retained_complete": 2370,
+      "eligible_1m": 2054,
+      "positive_1m": 143,
+      "eligible_2m": 1263,
+      "positive_2m": 244,
+      "eligible_3m": 1080,
+      "positive_3m": 237,
+      "future_censored": 6383,
+      "current_event_3m": 1290,
+      "current_event_2m": 1107,
+      "unexpected_timestamps": 129,
+      "current_event_1m": 316,
+      "no_current_neighbors": 12,
+      "future_timestamp_coverage": 16
+    },
+    "stage_counts_by_split": {
+      "train": {
+        "raw": 5934,
+        "retained_complete": 1596,
+        "eligible_1m": 1374,
+        "positive_1m": 108,
+        "eligible_2m": 857,
+        "positive_2m": 172,
+        "eligible_3m": 731,
+        "positive_3m": 161,
+        "future_censored": 4270,
+        "current_event_3m": 865,
+        "current_event_2m": 739,
+        "unexpected_timestamps": 49,
+        "current_event_1m": 222,
+        "no_current_neighbors": 8,
+        "future_timestamp_coverage": 11
+      },
+      "dev": {
+        "raw": 1475,
+        "future_censored": 1051,
+        "retained_complete": 374,
+        "eligible_1m": 339,
+        "positive_1m": 16,
+        "eligible_2m": 200,
+        "positive_2m": 39,
+        "eligible_3m": 172,
+        "positive_3m": 41,
+        "current_event_1m": 35,
+        "current_event_2m": 174,
+        "current_event_3m": 202,
+        "unexpected_timestamps": 46,
+        "no_current_neighbors": 3,
+        "future_timestamp_coverage": 1
+      },
+      "eval": {
+        "raw": 1501,
+        "future_censored": 1062,
+        "retained_complete": 400,
+        "eligible_1m": 341,
+        "positive_1m": 19,
+        "current_event_2m": 194,
+        "current_event_3m": 223,
+        "current_event_1m": 59,
+        "eligible_2m": 206,
+        "positive_2m": 33,
+        "eligible_3m": 177,
+        "positive_3m": 35,
+        "unexpected_timestamps": 34,
+        "no_current_neighbors": 1,
+        "future_timestamp_coverage": 4
+      }
+    },
+    "cohorts": {
+      "1m": {
+        "train": {
+          "n": 1374,
+          "positive": 108,
+          "negative": 1266,
+          "source_shards": 12,
+          "positive_rate": 0.07860262008733625
+        },
+        "dev": {
+          "n": 339,
+          "positive": 16,
+          "negative": 323,
+          "source_shards": 5,
+          "positive_rate": 0.0471976401179941
+        },
+        "eval": {
+          "n": 341,
+          "positive": 19,
+          "negative": 322,
+          "source_shards": 5,
+          "positive_rate": 0.05571847507331378
+        }
+      },
+      "2m": {
+        "train": {
+          "n": 857,
+          "positive": 172,
+          "negative": 685,
+          "source_shards": 12,
+          "positive_rate": 0.20070011668611434
+        },
+        "dev": {
+          "n": 200,
+          "positive": 39,
+          "negative": 161,
+          "source_shards": 5,
+          "positive_rate": 0.195
+        },
+        "eval": {
+          "n": 206,
+          "positive": 33,
+          "negative": 173,
+          "source_shards": 5,
+          "positive_rate": 0.16019417475728157
+        }
+      },
+      "3m": {
+        "train": {
+          "n": 731,
+          "positive": 161,
+          "negative": 570,
+          "source_shards": 12,
+          "positive_rate": 0.22024623803009577
+        },
+        "dev": {
+          "n": 172,
+          "positive": 41,
+          "negative": 131,
+          "source_shards": 5,
+          "positive_rate": 0.23837209302325582
+        },
+        "eval": {
+          "n": 177,
+          "positive": 35,
+          "negative": 142,
+          "source_shards": 5,
+          "positive_rate": 0.1977401129943503
+        }
+      }
+    },
+    "retained_zero_neighbor_rows": 0,
+    "raw_complete_retention_fraction": 0.265993265993266,
+    "future_censor_fraction_of_raw": 0.7163860830527498
+  },
+  "evaluation": {
+    "status": "eligible_for_limited_empirical_comparison",
+    "eval_metric_rows_independently_recomputed": 84,
+    "selected_model": "hist_gradient_boosting",
+    "dev_ap_scores": {
+      "logistic_regression": 0.6533409149929393,
+      "random_forest": 0.7345344353537739,
+      "hist_gradient_boosting": 0.741984974414772
+    },
+    "primary_comparison": {
+      "ap_difference": 0.28101146316806935,
+      "recall_at_10pct_difference": 0.2727272727272727
+    },
+    "stored_uncertainty": {
+      "draws_requested": 300,
+      "valid_draws": 300,
+      "unit": "source_shard",
+      "source_shards": 5,
+      "original_log_groups_known": false,
+      "caveat": "原始日志未知；区间不能排除重叠窗口相关性，小于五个分片时仅作探索。",
+      "ap_difference": {
+        "ci95_low": 0.1751567135931069,
+        "ci95_high": 0.37824104230358613
+      },
+      "recall_at_10pct_difference": {
+        "ci95_low": 0.13888888888888887,
+        "ci95_high": 0.3571428571428572
+      }
+    },
+    "seed_stability": {
+      "seeds": [
+        42,
+        7,
+        2026
+      ],
+      "n_seeds": 3,
+      "ap_min": 0.7302762063131997,
+      "ap_max": 0.7302762063131997,
+      "recall_10pct_min": 0.48484848484848486,
+      "recall_10pct_max": 0.48484848484848486
+    },
+    "curve_artifact_present": true,
+    "case_review_record_present": false,
+    "upload_approval": "pending_user_review",
+    "independently_recomputed_bootstrap": {
+      "valid_draws": 300,
+      "unit": "source_shard",
+      "ap_difference": {
+        "ci95_low": 0.17515671359310703,
+        "ci95_high": 0.3782410423035861
+      },
+      "recall_at_10pct_difference": {
+        "ci95_low": 0.13888888888888887,
+        "ci95_high": 0.3571428571428572
+      }
+    },
+    "dev_fixed_10pct_policy_on_eval": {
+      "request_rate": 0.0679611650485436,
+      "recall": 0.3939393939393939,
+      "precision": 0.9285714285714286,
+      "tie_probability": 1.0
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "原始日志分组未知；精确轨迹哈希与文件分离不能证明所有重叠窗口或地点完全独立。",
+    "AP优势与固定预算召回优势应分别解释；代理事件离线排序不能推出真实人工接管、外卖成本或事故效益。"
+  ],
+  "status": "pass_with_stated_limits",
+  "changes_to_data_or_models": false,
+  "publication_performed": false
+}

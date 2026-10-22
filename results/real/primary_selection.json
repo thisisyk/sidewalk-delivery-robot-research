@@ -1,0 +1,15 @@
+{
+  "model": "hist_gradient_boosting",
+  "seed": 42,
+  "ablation": "full",
+  "threshold_m": 2,
+  "selection_metric": "dev_ap",
+  "dev_ap": 0.741984974414772,
+  "candidate_dev_ap": {
+    "logistic_regression": 0.6533409149929393,
+    "random_forest": 0.7345344353537739,
+    "hist_gradient_boosting": 0.741984974414772
+  },
+  "frozen_before_eval_prediction": true,
+  "frozen_utc": "2026-10-22T05:49:37.485574+00:00"
+}

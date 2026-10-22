@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-22T20:24:18.511629+00:00",
+  "input_samples_sha256": "4fec9ad7cef746610716212e68e90c9b77e840e87eec1090b860b339a34b4c34",
+  "core_model_code_unchanged": true,
+  "no_weights_saved": true,
+  "no_real_scene_coordinates_exported": true,
+  "script_sha256": "4e8a0f27fa6bb2c3fa0ead0d2fbab3a1a64fdabedee07019abfc18053007e5af",
+  "source_sha256": {
+    "sidewalk_worlds.py": "ee7e551b89cc2101357605dd8c91b30a32393450c02691444fee98fea7a8f843",
+    "sidewalk_simulation.py": "4fbf695869c4014baeaa8f7d3d3b286a03876fdbff975a2d09ec5c770777fc81",
+    "demo_model.py": "0dc35fac3805a1ca67ab62bbceef420d1abe1a022458d41e0adb1815d5cd345f",
+    "assistance.py": "7d25cabc68675ade038909b33ce1e3662beb03dacfb8da0848b04cfcd4d1c52b"
+  },
+  "outputs_sha256": {
+    "scenario_metrics.csv": "f0e899e61075379a0e307f0c45ca9e2880d50f4dddab2e20354fb29152ee0e22",
+    "summary.json": "bb92bd3f3901b55a60a831066a39f606b1875f53961e9e982a00a40005725b26",
+    "fallback_comparison.csv": "dad7abd348cd878c4220801970d4e3a14e08bf19615a587915fa4a7aeeb7e7d7",
+    "fallback_comparison.json": "a4424d3e191cebc5b489f2726408f66ffb615629b9c9ada6b83c48f3134cf8e7"
+  },
+  "gallery_sha256": "13e308717cda26598bd46e01d05d4e637170b9ef21baeced703a9e82a4e2b92f",
+  "elapsed_s": 153.09,
+  "user_publication_approval": "pending"
+}

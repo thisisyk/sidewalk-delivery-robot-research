@@ -1,0 +1,701 @@
+{
+  "publication_approval": "approved_by_explicit_user_request",
+  "approval_date_client": "2026-10-23",
+  "repository": "https://github.com/thisisyk/sidewalk-delivery-robot-research",
+  "review_archive_sha256": "e623b01f3563f49dbe7eecf4826cf5ce9b7bcfb6747c6fe50a446c4f492bd842",
+  "post_approval_changes": [
+    "README.md",
+    "docs/data_access.md",
+    "docs/demo_guide_zh.md",
+    "docs/final_report_zh.md",
+    "docs/limitations.md",
+    "docs/progress.md",
+    "docs/protocol.md",
+    "docs/sidewalk_demo_zh.md",
+    "docs/urban_scenarios_zh.md",
+    "docs/validation.md",
+    "scripts/report_sidewalk_gallery.py",
+    "publication.json"
+  ],
+  "post_approval_change_scope": "publication status prose only; all scientific results, model, tests and demos unchanged",
+  "exact_real_scenario_ids_checked": 2370,
+  "scenario_id_or_credential_hits": 0,
+  "frozen_results_unchanged": true,
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "2cf29e0108292fd3a4bad146b33fe9077d942f9cbc4c054b07a9c917d54ffb4b",
+      "bytes": 559
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "3195cd17440aab39553c53bbd22ded44c12a54972bc3c35f94f5f4cf4869b4bb",
+      "bytes": 204
+    },
+    {
+      "path": "README.md",
+      "sha256": "0335e9c61b3a1f95d08f4d45e08c4fbf62fef5e34bbaf2bec193f81612877a66",
+      "bytes": 14139
+    },
+    {
+      "path": "configs/protocol.json",
+      "sha256": "57f1120237add9b4d9b5d446539c241a7088f681aaa30f02d91248821dff27b7",
+      "bytes": 624
+    },
+    {
+      "path": "configs/sidewalk_protocol.json",
+      "sha256": "9af913893316cee882c96ca513687aa14f097340103427e0919256b9ad641aeb",
+      "bytes": 2713
+    },
+    {
+      "path": "configs/simulation_protocol.json",
+      "sha256": "e7e0f921b4863b178fad1188634daf6e8a2f1393d4a5571013f6be3d4ee8d0af",
+      "bytes": 1138
+    },
+    {
+      "path": "configs/urban_protocol.json",
+      "sha256": "494df56c51894c9782eab73f30301659ea1c8558a1b1af1bad46459c420fb4ba",
+      "bytes": 1079
+    },
+    {
+      "path": "demo/assistance_browser_preview.png",
+      "sha256": "c481ff3987aa11fb0a69688b10414c020ad7e9d5e461b5ed35db2d84dc498502",
+      "bytes": 34152
+    },
+    {
+      "path": "demo/browser_preview.png",
+      "sha256": "7496fe5f850833fdc7a8dc1886792e726b63b9db235d087966d647d36f7674ce",
+      "bytes": 25042
+    },
+    {
+      "path": "demo/example_run.js",
+      "sha256": "6f7d1ffcfd018e7956cb800e1825c5260058ebe47d0b64dae4f406b5a6f41be3",
+      "bytes": 455814
+    },
+    {
+      "path": "demo/index.html",
+      "sha256": "7483067d7532f8f2fa7665fa851e18523ac7d5eb0f50371a90547ce4bacc584d",
+      "bytes": 75898
+    },
+    {
+      "path": "demo/learned_simulation.gif",
+      "sha256": "c6ce6977eebc9228577318ba9751b85886594a0fc4eed8cfa1d9a765f9ff8d5d",
+      "bytes": 1309429
+    },
+    {
+      "path": "demo/learned_simulation.png",
+      "sha256": "f1375d20e8bdf6cc69cd6b8b349f3f7dc88d18839330c87d7f395a942d4fd8f6",
+      "bytes": 64231
+    },
+    {
+      "path": "demo/scene_gallery.js",
+      "sha256": "66df72200e6f6b3e41a44af2deeffd31ac3c791191fc8c71717505a2cb6ed253",
+      "bytes": 5986972
+    },
+    {
+      "path": "demo/sidewalk_atlas.png",
+      "sha256": "501f3b7bea3e3ae0c4cca813a706050a66b0a691e29261758e57c3082a182853",
+      "bytes": 308326
+    },
+    {
+      "path": "demo/sidewalk_browser_preview.png",
+      "sha256": "9fa4779981111d90f8d4c65abce585c0a18b5b969706118666d37a3d7422ef1b",
+      "bytes": 32122
+    },
+    {
+      "path": "demo/sidewalk_gallery.js",
+      "sha256": "13e308717cda26598bd46e01d05d4e637170b9ef21baeced703a9e82a4e2b92f",
+      "bytes": 9806538
+    },
+    {
+      "path": "demo/sidewalk_scenarios.gif",
+      "sha256": "dc224cb18830736b61b1149f7f40667f4380a6cd2d9d524c87b39a62af3ce15a",
+      "bytes": 10409784
+    },
+    {
+      "path": "demo/sidewalk_scenarios.manifest.json",
+      "sha256": "18a1cf75545dc2caac694be3a69167d540cf0bb192c1949d89b8db96063f673d",
+      "bytes": 17594
+    },
+    {
+      "path": "demo/sidewalk_scenarios.png",
+      "sha256": "805310759659a32615423eeffa57d19bdeb730166b2a8edb63a8609c926d9e34",
+      "bytes": 140251
+    },
+    {
+      "path": "demo/threshold_050_run.json",
+      "sha256": "edd80cf1526fdef09cff0402218f95e37ed0c229eba5897ad670073e1273ede8",
+      "bytes": 895139
+    },
+    {
+      "path": "demo/urban_atlas.png",
+      "sha256": "21e5a77d00d7e80b7d674adda5317122950665477932bdb7fe7da66239acf61c",
+      "bytes": 298918
+    },
+    {
+      "path": "demo/urban_scenarios.gif",
+      "sha256": "ec9127473ffd911f03d72b77d1eb3c0ce3974e050e1321d19e094b81d8f1e571",
+      "bytes": 7976976
+    },
+    {
+      "path": "demo/urban_scenarios.manifest.json",
+      "sha256": "5ab08bedb69484c225031ed016aa0d0726c06b0b88475401916444b75d665701",
+      "bytes": 1858
+    },
+    {
+      "path": "demo/urban_scenarios.png",
+      "sha256": "53cc2e05bd6fcb43dfe319e5f3d6a2b7de1577da9ebc7f7d613bdffdb8f3f6b6",
+      "bytes": 92421
+    },
+    {
+      "path": "docs/case_review.md",
+      "sha256": "f6afcc7357d9c9c3070357b32c5e9a1f57728fbe34e515ec996092e3c3d55334",
+      "bytes": 2027
+    },
+    {
+      "path": "docs/data_access.md",
+      "sha256": "f401b4f9aa96f95f921d973f1d8b8ac7c1e9af2ad35773329afd741922e467fc",
+      "bytes": 4713
+    },
+    {
+      "path": "docs/demo_guide_zh.md",
+      "sha256": "c6486f237951a4158c75ba9aed4bb41c3cb148d7b77749eacecf591fb70367b6",
+      "bytes": 13787
+    },
+    {
+      "path": "docs/extension_report_zh.md",
+      "sha256": "931bb5f26cbb557ea74af88b16ae90a0263a506c924ecc8e529fd835d8992f86",
+      "bytes": 6734
+    },
+    {
+      "path": "docs/final_report_zh.md",
+      "sha256": "83948323134b4219c693d416e3cd1f97ff8ca832907d7a3c68d48758237cfefc",
+      "bytes": 11953
+    },
+    {
+      "path": "docs/limitations.md",
+      "sha256": "cecbfb8d5c5b505958d3c670130fe8991121b8e5148141ac38ebc874b19a5dfd",
+      "bytes": 4510
+    },
+    {
+      "path": "docs/progress.md",
+      "sha256": "8cd65ab73bc0dceeeb464992cf5560e9fdf6b51f225472456fd42319f0b2467a",
+      "bytes": 5417
+    },
+    {
+      "path": "docs/protocol.md",
+      "sha256": "2cf3fae375146eb023a66988fc0cdf1e31930dc1d80f42d90e958359da5a0f65",
+      "bytes": 7459
+    },
+    {
+      "path": "docs/queue_simulation_zh.md",
+      "sha256": "4dc1309e465dfad343f2c24c8b59dc8272982acce5c9c92ba0b29d023364fcb2",
+      "bytes": 7300
+    },
+    {
+      "path": "docs/sidewalk_demo_zh.md",
+      "sha256": "697e37b99edead640093b118882528f00611a8cabf94ce3797f194bd9c8e685b",
+      "bytes": 19826
+    },
+    {
+      "path": "docs/urban_scenarios_zh.md",
+      "sha256": "df29d92bf85aecdb793fddbf3ff1573f40c1e0f93e24d01c6f69e9605a38cda9",
+      "bytes": 7117
+    },
+    {
+      "path": "docs/validation.md",
+      "sha256": "39dd785cdd4ae827f86171c5871e21c155539ee0dd9d20548797ecaac45524b2",
+      "bytes": 8087
+    },
+    {
+      "path": "publication.json",
+      "sha256": "455232bdd86c0f3d1e861012e03738a4765a247642c43a968abebcb78c801f8d",
+      "bytes": 1153
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "01321e8137360851bcbd346fbc9f4083ee8085a829ddb8e9c5145815c3e3b7f3",
+      "bytes": 585
+    },
+    {
+      "path": "requirements-preprocess.txt",
+      "sha256": "b3b0dc78dd8f0b330f432ab5fdda5f3582acc0d4aa8f9589459e831b84145254",
+      "bytes": 145
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "322012412bc804fcbeb2ce90e9a9e32fc7244c915c9cbaab2d4d22b29b4f5b0d",
+      "bytes": 104
+    },
+    {
+      "path": "results/extension/capacity_curve.csv",
+      "sha256": "3a9abfee97bfc7614adecbab9667f960d3188373c59791b1ee2eb4b95a5f7c62",
+      "bytes": 5372
+    },
+    {
+      "path": "results/extension/extension_diagnostics.png",
+      "sha256": "71d3b29a09956407305c407edba285cc434cfccaab9c7e102ea119e68f358f55",
+      "bytes": 155118
+    },
+    {
+      "path": "results/extension/extension_manifest.json",
+      "sha256": "d70684ca57876bc3ba4d3e535a2dd9d9b2a42f8918de3e46d3c293e11eba9fd5",
+      "bytes": 1680
+    },
+    {
+      "path": "results/extension/extension_qa.json",
+      "sha256": "159a92eb0dcd20d04deebe18f47791b44cdc0b9837af817ea7283fc8569b1f60",
+      "bytes": 355
+    },
+    {
+      "path": "results/extension/fixed_dev_threshold_transfer.csv",
+      "sha256": "d9b038b6d9e43913bcf7b7d2c992f8ee629d6267cf9e9b88a8494ba5138c3e02",
+      "bytes": 1299
+    },
+    {
+      "path": "results/extension/paired_capacity_bootstrap.json",
+      "sha256": "d1b246e17383fd4d8f5453fcc572d5166b4925823207bd9edf05aa3e5cb5c36c",
+      "bytes": 711
+    },
+    {
+      "path": "results/extension/score_reliability.csv",
+      "sha256": "aaa302c576a1e11653dbab287ffce4c198f49f74229fc89d93618e15cc8164b3",
+      "bytes": 1070
+    },
+    {
+      "path": "results/extension/subgroups_fixed_dev10.csv",
+      "sha256": "6acd1fb68bcb2828260bd59a05fd398c832c564f0db9e48345387af8329e8582",
+      "bytes": 9303
+    },
+    {
+      "path": "results/queue_simulation/figure.png",
+      "sha256": "6d35db681b542ccb049caf35986ff7aec09b26356d0031dfdaa49645c893ec05",
+      "bytes": 216837
+    },
+    {
+      "path": "results/queue_simulation/manifest.json",
+      "sha256": "b3a5ad8dfa1eb8f3c1d254d3e5c31806b3a415c7eb923b77912aef97e3d1e35d",
+      "bytes": 2168
+    },
+    {
+      "path": "results/queue_simulation/metrics.csv",
+      "sha256": "5fc2a08628852182db1ef899a7d0ab837d71db5c8bfe80cf299dafe39466c231",
+      "bytes": 72076
+    },
+    {
+      "path": "results/queue_simulation/summary.json",
+      "sha256": "1592d6b68f221a4d604aecd186e70edd14b414340c4911c94bf59a2cc2a182a0",
+      "bytes": 12264
+    },
+    {
+      "path": "results/real/auth_cleanup.json",
+      "sha256": "495be6689d7d66a9671d170575862e42e6ef01080fd342d88643c8a558cce542",
+      "bytes": 202
+    },
+    {
+      "path": "results/real/dev_fixed_policies.csv",
+      "sha256": "2a18d4cd7dcea29ad064d7fa8d4fa16f6f6bde7f99458ec911dfc93ee3d13207",
+      "bytes": 36518
+    },
+    {
+      "path": "results/real/feature_columns.json",
+      "sha256": "4292c5abc38bafd86e1a0ffdaf79f6a11839f2fed36840214afeaaf36e76cf78",
+      "bytes": 7080
+    },
+    {
+      "path": "results/real/label_audit.json",
+      "sha256": "fc45db1549e1dbceeb6293707e576a495e1b07090dfa007cefe0cf4c56b2a8d8",
+      "bytes": 1794
+    },
+    {
+      "path": "results/real/metrics.csv",
+      "sha256": "2ce2be6f48621f182a561a2a96fc155b9043881ff9f713eadc2a417ca5d23b36",
+      "bytes": 58563
+    },
+    {
+      "path": "results/real/numeric_audit.json",
+      "sha256": "f829b663742e8fcdcc57833b9acfaf2e91c8e7c286a1ae8466a5089e5eda82c8",
+      "bytes": 6781
+    },
+    {
+      "path": "results/real/primary_curves.png",
+      "sha256": "518414ba0377802d03274be7962b08f68515ee557b76f979f45cf612af1c5db4",
+      "bytes": 131517
+    },
+    {
+      "path": "results/real/primary_selection.json",
+      "sha256": "3c601fbac40c70f0b38c2426abfd4dab38f1fca454005942127dff8a539d780e",
+      "bytes": 432
+    },
+    {
+      "path": "results/real/report.md",
+      "sha256": "81f16c3e57ed1876c92e894d817d692c7a44f1082420abf027e2420d367bdfdc",
+      "bytes": 3495
+    },
+    {
+      "path": "results/real/review_status.json",
+      "sha256": "09f2f2f73ec323f6c712820424361f565addfd6114f65d1ce87fe73ad3b6f65d",
+      "bytes": 2238
+    },
+    {
+      "path": "results/real/run_manifest.json",
+      "sha256": "c7151b40c19be23e6f5f350baecb065fcb9834d6b0339082d677514e1676e519",
+      "bytes": 4765
+    },
+    {
+      "path": "results/real/source_audit.json",
+      "sha256": "7b2d9c49bcf94cbc57d5d771f0137a7c9a611f56b06eca059f4b23557dd2ecb6",
+      "bytes": 6782
+    },
+    {
+      "path": "results/real/source_manifest.json",
+      "sha256": "e71b3efaef12d144a5f531e84955eefdb84d5de14a9b45f2ab8c839f150e91ca",
+      "bytes": 22093
+    },
+    {
+      "path": "results/real/summary.json",
+      "sha256": "02e33227d9e6b056af8338ab3970471a7757b41574df73a5a062c15bbc9cc945",
+      "bytes": 3336
+    },
+    {
+      "path": "results/sidewalk/assistance_audit.json",
+      "sha256": "794201d2a0afeba3683a0b4d85704a64a1aca2f47d4b297993d931763f5119fe",
+      "bytes": 3645
+    },
+    {
+      "path": "results/sidewalk/fallback_comparison.csv",
+      "sha256": "dad7abd348cd878c4220801970d4e3a14e08bf19615a587915fa4a7aeeb7e7d7",
+      "bytes": 3656
+    },
+    {
+      "path": "results/sidewalk/fallback_comparison.json",
+      "sha256": "a4424d3e191cebc5b489f2726408f66ffb615629b9c9ada6b83c48f3134cf8e7",
+      "bytes": 121464
+    },
+    {
+      "path": "results/sidewalk/geometry_motion_audit.json",
+      "sha256": "7b1ea38a6b00d8475694353c7bd1c6710352a1b3ed46c9b06c58c4520066d7c4",
+      "bytes": 4552
+    },
+    {
+      "path": "results/sidewalk/manifest.json",
+      "sha256": "7295e4f005724d1abccf57cbbf3cc16c98a4f6be86bf3b83219c8f472d2becae",
+      "bytes": 1328
+    },
+    {
+      "path": "results/sidewalk/release_audit.json",
+      "sha256": "304b32106968ac4ec79fc1b4a18e4fcf9026ec52386b8527057bbea7bcaa4ef4",
+      "bytes": 2266
+    },
+    {
+      "path": "results/sidewalk/scenario_metrics.csv",
+      "sha256": "f0e899e61075379a0e307f0c45ca9e2880d50f4dddab2e20354fb29152ee0e22",
+      "bytes": 6939
+    },
+    {
+      "path": "results/sidewalk/summary.json",
+      "sha256": "bb92bd3f3901b55a60a831066a39f606b1875f53961e9e982a00a40005725b26",
+      "bytes": 3410
+    },
+    {
+      "path": "results/sidewalk_baseline/geometry_motion_audit.json",
+      "sha256": "6f6808cbb8a974d857d7b612e2d96deda368cbb13da7d68d0a01963295cf766b",
+      "bytes": 4552
+    },
+    {
+      "path": "results/sidewalk_baseline/manifest.json",
+      "sha256": "4b691c41ef2b7e1dc95d33782855403ab3300c4a03a264908e5c5683b350e232",
+      "bytes": 1037
+    },
+    {
+      "path": "results/sidewalk_baseline/release_audit.json",
+      "sha256": "e1be2778cd151d20df9f28734e6ebca1bc740133d8cee63dc3c31ddf1119a2d0",
+      "bytes": 1864
+    },
+    {
+      "path": "results/sidewalk_baseline/scenario_metrics.csv",
+      "sha256": "77fc32e8412bbb6313d3caf8cbf3eee5f6e09d30b9b18938027d9bf1fe30c79c",
+      "bytes": 4381
+    },
+    {
+      "path": "results/sidewalk_baseline/summary.json",
+      "sha256": "4eb5a97d1cf1ac552833723076cbdd717790a6e968a24e554336998fdbaa7c4a",
+      "bytes": 2682
+    },
+    {
+      "path": "results/simulation/model_parity.json",
+      "sha256": "b874a7b2c10a34f4ce522e8f045f5d049d13c55c4f5458d174fe33b340098cd6",
+      "bytes": 2119
+    },
+    {
+      "path": "results/simulation/simulation_audit.json",
+      "sha256": "c0e673013896b8c01edd7adb1eb1771653f239e228f28d04f12c0fbd9f672c14",
+      "bytes": 6697
+    },
+    {
+      "path": "results/urban/manifest.json",
+      "sha256": "fc573caa290325a3a3bb314f38f107e27b13faa247d0dea8a94d239d0f1abffe",
+      "bytes": 1031
+    },
+    {
+      "path": "results/urban/scenario_metrics.csv",
+      "sha256": "d699a753e765e4b464347f20b55363e97ad92bd1cdfbdb5115e53adb4b856836",
+      "bytes": 3765
+    },
+    {
+      "path": "results/urban/summary.json",
+      "sha256": "a8414fe5366eecac0f6ada32af3346d125d6042e5153c5b619098c08a96d81fd",
+      "bytes": 2681
+    },
+    {
+      "path": "results/urban/visibility_audit.json",
+      "sha256": "cbacd6e3a2d174987cc9fb617b28a7980d0f3da20bf5922175b9f682676eb12c",
+      "bytes": 6843
+    },
+    {
+      "path": "scripts/analyze_extension.py",
+      "sha256": "184756eeef643cd4673b7f8035d7c1f89b6ad8ae1a0194fae5994c0b3b2e2e2e",
+      "bytes": 20536
+    },
+    {
+      "path": "scripts/audit_assistance_gallery.py",
+      "sha256": "b320f5edf3ccb9169e4c1bf3d3c71d65733498d4d2b74c9a666efbdc126f1766",
+      "bytes": 9913
+    },
+    {
+      "path": "scripts/audit_labels.py",
+      "sha256": "1868d716d41f968d224c798cd8e983d16fbdd3dab7416a46ec6b0aa235d6841f",
+      "bytes": 11250
+    },
+    {
+      "path": "scripts/audit_results.py",
+      "sha256": "84cc97bb154788209a0f01a75138b133a5f642e2bbd408176ea8cacc5d7872cf",
+      "bytes": 24035
+    },
+    {
+      "path": "scripts/audit_sidewalk_gallery.py",
+      "sha256": "63573069a231cd5dab039017be556c31ca540c4b5633ff414b2864e780ae8312",
+      "bytes": 6459
+    },
+    {
+      "path": "scripts/build_sidewalk_gallery.py",
+      "sha256": "4e8a0f27fa6bb2c3fa0ead0d2fbab3a1a64fdabedee07019abfc18053007e5af",
+      "bytes": 11609
+    },
+    {
+      "path": "scripts/build_urban_gallery.py",
+      "sha256": "1b8b034ac3d0bd70d88b375c88e175ac36cfc7b6ad3fc66c1ffe5557a93a3288",
+      "bytes": 5172
+    },
+    {
+      "path": "scripts/download_waymo.ps1",
+      "sha256": "6b3889165e52dda578640ed09fab03173502a2eb5f96d1d33772c3970cc9f9a0",
+      "bytes": 1456
+    },
+    {
+      "path": "scripts/fetch_waymo_schema.py",
+      "sha256": "e29293f0b4d31d861a21af3ee168a93bbbe812c165325fd1bef847a3ea0fc79d",
+      "bytes": 7853
+    },
+    {
+      "path": "scripts/package_release.py",
+      "sha256": "04d7e0de5e3fd3b77012022a541559de27eedca8240608def662281337009860",
+      "bytes": 5593
+    },
+    {
+      "path": "scripts/prepare.py",
+      "sha256": "712116765257541fd3567313532b4914b173ef8df0c4a5d5ab2175becd0a16ca",
+      "bytes": 7727
+    },
+    {
+      "path": "scripts/render_demo_gif.py",
+      "sha256": "e4493a7c5226d154be23342f13001b8283a3d843bfa67b0b7a5e75f3d303194d",
+      "bytes": 6664
+    },
+    {
+      "path": "scripts/render_sidewalk_animation.py",
+      "sha256": "a69dd50ac279212a85d7676a3b708f5ba5fc433a926c6954dc31e64bccb1df08",
+      "bytes": 28363
+    },
+    {
+      "path": "scripts/render_sidewalk_atlas.py",
+      "sha256": "26bd748875610c9d55aab4a7fd8ab162daed03b1c77a0c8e736292a959014f2c",
+      "bytes": 6651
+    },
+    {
+      "path": "scripts/render_urban_animation.py",
+      "sha256": "cd42764e286820d182bed9b7f383043afa665715a009ea7514ebed8fc70f5fc3",
+      "bytes": 15705
+    },
+    {
+      "path": "scripts/render_urban_atlas.py",
+      "sha256": "48c1eed83be4029723dfbc5e6f02074a163eb2757c150a887aceeb85017f73a9",
+      "bytes": 8974
+    },
+    {
+      "path": "scripts/report_sidewalk_gallery.py",
+      "sha256": "e2e105ccd49c14f05d1acabdb4f072f690d048d4b5ac10640aa597b5038bda65",
+      "bytes": 27587
+    },
+    {
+      "path": "scripts/report_urban_gallery.py",
+      "sha256": "4e14887286dbfdfbe6500b579144337367d912550454ac2143196817bbffbd4c",
+      "bytes": 7545
+    },
+    {
+      "path": "scripts/review_cases.py",
+      "sha256": "928c08e25733f07893e25c88bf4a210781d79d7bcf8169f13c260e570ac2d6cb",
+      "bytes": 4498
+    },
+    {
+      "path": "scripts/serve_demo.py",
+      "sha256": "9b0c32200f33c6f969e7f5d0ee1986b098d9564c4eb10852baad9c7602795b73",
+      "bytes": 6561
+    },
+    {
+      "path": "scripts/simulate_review_queue.py",
+      "sha256": "a5844095bfda47dac9b4398c6ac13fb51fe370fcf0e706101c9a73be7ef4938d",
+      "bytes": 26817
+    },
+    {
+      "path": "scripts/train_evaluate.py",
+      "sha256": "8c68a84ee4f31e8f9bd19b9622a3c21548a369bb16ecfbfe61c02cbbe4edb6a4",
+      "bytes": 1643
+    },
+    {
+      "path": "scripts/verify_demo_model.py",
+      "sha256": "1e31140f39efd6eefcf55f1d020a5dbcffc3b6a76c72e992256571dc726926a2",
+      "bytes": 1683
+    },
+    {
+      "path": "src/delivery_risk/__init__.py",
+      "sha256": "fc9f0641f86e197c70b8ad3ea9899d35b111def52152b866d1bbf29f78976d0d",
+      "bytes": 104
+    },
+    {
+      "path": "src/delivery_risk/assistance.py",
+      "sha256": "7d25cabc68675ade038909b33ce1e3662beb03dacfb8da0848b04cfcd4d1c52b",
+      "bytes": 5362
+    },
+    {
+      "path": "src/delivery_risk/demo_model.py",
+      "sha256": "0dc35fac3805a1ca67ab62bbceef420d1abe1a022458d41e0adb1815d5cd345f",
+      "bytes": 12435
+    },
+    {
+      "path": "src/delivery_risk/experiment.py",
+      "sha256": "9b2997a6ba2b904546b1897e8cace28cdc679b4382bc1ebe6d4985ffdb9b2183",
+      "bytes": 32139
+    },
+    {
+      "path": "src/delivery_risk/geometry.py",
+      "sha256": "3ea3f17d43415ded854a313c5551a60b0e42463995078bf223aa245980759b36",
+      "bytes": 4280
+    },
+    {
+      "path": "src/delivery_risk/samples.py",
+      "sha256": "ce1f3653a2bfabbc7f446ced3ad395c7a64567fea2aa800f6d9a377689a8ccd1",
+      "bytes": 7259
+    },
+    {
+      "path": "src/delivery_risk/sidewalk_simulation.py",
+      "sha256": "4fbf695869c4014baeaa8f7d3d3b286a03876fdbff975a2d09ec5c770777fc81",
+      "bytes": 33140
+    },
+    {
+      "path": "src/delivery_risk/sidewalk_worlds.py",
+      "sha256": "ee7e551b89cc2101357605dd8c91b30a32393450c02691444fee98fea7a8f843",
+      "bytes": 14857
+    },
+    {
+      "path": "src/delivery_risk/simulation.py",
+      "sha256": "42d65423307a245d8a1cf6cbab9c3db7c80d33b8999de9406e918d0c93c6b3f2",
+      "bytes": 13477
+    },
+    {
+      "path": "src/delivery_risk/urban_simulation.py",
+      "sha256": "18cc4b55f1150da82a95c2ef11c1fad1cbf6e5e2eb831b4c40dee96605bd293f",
+      "bytes": 26358
+    },
+    {
+      "path": "src/delivery_risk/urban_worlds.py",
+      "sha256": "71de26e9ed77c6a62acc2984a7522729c127365cf0d95f3e807ff7a62881fbce",
+      "bytes": 15578
+    },
+    {
+      "path": "src/delivery_risk/waymo_reader.py",
+      "sha256": "b9c5edc1eba8cf3b242b0ecf73d9e87fc9931b4ac1f5f8a817ce00e66569c072",
+      "bytes": 11646
+    },
+    {
+      "path": "tests/test_assistance.py",
+      "sha256": "0a84012f2cc4918b01438aa21bcc2ca98d0d66a27575a5a96c7c77dfb7a4cbc7",
+      "bytes": 3822
+    },
+    {
+      "path": "tests/test_assistance_execution.py",
+      "sha256": "154b2ae858b4de81fe3d06e046dbf1c711dd5a232f833c1e49697b24dd77a959",
+      "bytes": 3564
+    },
+    {
+      "path": "tests/test_demo_model.py",
+      "sha256": "006ef4f36d3160adf261784020ec9adaee644957ac624eebe01bc4e51947cc47",
+      "bytes": 4208
+    },
+    {
+      "path": "tests/test_experiment.py",
+      "sha256": "b9ee8eef733bffd259d79f709b80c0a7652b648fd3889bc62b2b837d3eb4408a",
+      "bytes": 2939
+    },
+    {
+      "path": "tests/test_geometry_batch.py",
+      "sha256": "6dff3c03968293be85f222aff7afc1e7ef6bd6fd21a510ee238fb479c03d77c5",
+      "bytes": 3435
+    },
+    {
+      "path": "tests/test_preparation_guards.py",
+      "sha256": "8b21bd8e78a76051c0ebb0d168d5b0bfb85e03b7861d0643ca27243ad27d7a84",
+      "bytes": 5004
+    },
+    {
+      "path": "tests/test_science.py",
+      "sha256": "ce9a2d4d728da2da25c790c49b39eddfecc6bab33e4873cad053243f1dd42a96",
+      "bytes": 3200
+    },
+    {
+      "path": "tests/test_sidewalk_assistance.py",
+      "sha256": "c320d41bc3e584148b1f5ea14b352b5fb2dc8a0d0cd813831aef7f8054df4663",
+      "bytes": 5858
+    },
+    {
+      "path": "tests/test_sidewalk_simulation.py",
+      "sha256": "d41e0f78ec036b344494722f31b0d21d671149b896f2972d0e218917bb72085b",
+      "bytes": 5459
+    },
+    {
+      "path": "tests/test_sidewalk_worlds.py",
+      "sha256": "df78c0eadee07f6e94f2b25faa0f5286a694237df23efe27dcea1dcacb3716da",
+      "bytes": 4552
+    },
+    {
+      "path": "tests/test_simulation.py",
+      "sha256": "6ade9ae14b0aeea27cc4f865fb5fd1997a1881fb44773e2c43f5655b6c9a84be",
+      "bytes": 2450
+    },
+    {
+      "path": "tests/test_urban_simulation.py",
+      "sha256": "3bd606a05f290b54d1395dfb21cdd11deaa664bdded678b68a4f956a0b175b11",
+      "bytes": 7623
+    },
+    {
+      "path": "tests/test_urban_worlds.py",
+      "sha256": "d5b3037e69fb33c8f5afd7ef8f7e00408318e80a0e292415f6dc46f9c87c8f8c",
+      "bytes": 3617
+    },
+    {
+      "path": "tests/test_waymo_reader.py",
+      "sha256": "8921da2c33702f389c2a2977d4f0d5522839dc64c9fa7771e8374274d79c1163",
+      "bytes": 8394
+    }
+  ]
+}

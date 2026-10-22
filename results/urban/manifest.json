@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-22T19:40:11.063759+00:00",
+  "input_samples_sha256": "4fec9ad7cef746610716212e68e90c9b77e840e87eec1090b860b339a34b4c34",
+  "core_model_code_unchanged": true,
+  "no_weights_saved": true,
+  "no_real_scene_coordinates_exported": true,
+  "script_sha256": "1b8b034ac3d0bd70d88b375c88e175ac36cfc7b6ad3fc66c1ffe5557a93a3288",
+  "source_sha256": {
+    "urban_worlds.py": "71de26e9ed77c6a62acc2984a7522729c127365cf0d95f3e807ff7a62881fbce",
+    "urban_simulation.py": "18cc4b55f1150da82a95c2ef11c1fad1cbf6e5e2eb831b4c40dee96605bd293f",
+    "demo_model.py": "0dc35fac3805a1ca67ab62bbceef420d1abe1a022458d41e0adb1815d5cd345f"
+  },
+  "outputs_sha256": {
+    "scenario_metrics.csv": "d699a753e765e4b464347f20b55363e97ad92bd1cdfbdb5115e53adb4b856836",
+    "summary.json": "a8414fe5366eecac0f6ada32af3346d125d6042e5153c5b619098c08a96d81fd"
+  },
+  "gallery_sha256": "66df72200e6f6b3e41a44af2deeffd31ac3c791191fc8c71717505a2cb6ed253",
+  "elapsed_s": 212.52,
+  "user_publication_approval": "pending"
+}

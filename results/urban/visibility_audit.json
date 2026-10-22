@@ -1,0 +1,214 @@
+{
+  "audit": "paired_actual_frozen_hist_gradient_boosting_visibility_toggle",
+  "synthetic": true,
+  "settings": {
+    "scenario": "blind_corner",
+    "domain": "road",
+    "threshold": 0.9556857111879499,
+    "operators": 1,
+    "fleet": 6,
+    "seed": 42,
+    "density": 1.0,
+    "duration_s": 120.0,
+    "dt": 0.5,
+    "service_s": 15.0
+  },
+  "fit": {
+    "model": "hist_gradient_boosting",
+    "training_rows": 857,
+    "fit_splits": [
+      "train"
+    ],
+    "selection_repeated": false,
+    "evaluation_used_for_fit": false,
+    "same_model_instance_for_both_runs": true
+  },
+  "occlusion_on": {
+    "main_vehicle": {
+      "completed": false,
+      "initial_heading_rad": 0.0,
+      "final_heading_rad": 0.8508477466366232,
+      "heading_range_rad": [
+        0.0,
+        0.8508477466366232
+      ],
+      "maximum_heading_change_from_initial_deg": 48.74998489049489,
+      "net_heading_change_deg": 48.74998489049489,
+      "max_step_heading_change_deg": 13.595826040289726,
+      "active_frames_with_hidden_objects": 21,
+      "hidden_supported_object_frames_by_kind": {
+        "fleet_vehicle": 3,
+        "pedestrian": 21
+      },
+      "hidden_distinct_object_counts_by_kind": {
+        "fleet_vehicle": 1,
+        "pedestrian": 1
+      },
+      "visible_supported_object_frames_by_kind": {
+        "fleet_vehicle": 680,
+        "car": 157,
+        "pedestrian": 155,
+        "cyclist": 105
+      },
+      "scored_frames": 186,
+      "frame_count": 240
+    },
+    "fleet_summary": {
+      "completed": 3,
+      "total": 6,
+      "unfinished": 3,
+      "mean_wait_s": 60.75,
+      "p95_wait_s": 104.9,
+      "requests": 2,
+      "operator_busy_fraction": 0.2500000000000013,
+      "near_contact_frames": 24,
+      "physical_overlap_frames": 24,
+      "contact_vehicle_frames_by_object_kind": {
+        "car": 24
+      },
+      "contact_stationary_vehicle_frames": 24,
+      "occluded_actor_frames": 152,
+      "unsupported_static_objects": 4,
+      "waiting_at_end": 3,
+      "route_replans": 2,
+      "failed_replans": 0,
+      "fraction_scored_frames_outside_training_minmax": 0.9978540772532188,
+      "domain_warning": "合成道路、遮挡观测及控制均有分布偏移；模型未学习建筑/垃圾/围挡",
+      "policy": "learned"
+    }
+  },
+  "occlusion_off": {
+    "main_vehicle": {
+      "completed": false,
+      "initial_heading_rad": 0.0,
+      "final_heading_rad": 0.8508477466366232,
+      "heading_range_rad": [
+        0.0,
+        0.8508477466366232
+      ],
+      "maximum_heading_change_from_initial_deg": 48.74998489049489,
+      "net_heading_change_deg": 48.74998489049489,
+      "max_step_heading_change_deg": 13.595826040289726,
+      "active_frames_with_hidden_objects": 0,
+      "hidden_supported_object_frames_by_kind": {},
+      "hidden_distinct_object_counts_by_kind": {},
+      "visible_supported_object_frames_by_kind": {
+        "fleet_vehicle": 683,
+        "pedestrian": 176,
+        "car": 157,
+        "cyclist": 105
+      },
+      "scored_frames": 188,
+      "frame_count": 240
+    },
+    "fleet_summary": {
+      "completed": 3,
+      "total": 6,
+      "unfinished": 3,
+      "mean_wait_s": 60.75,
+      "p95_wait_s": 104.9,
+      "requests": 2,
+      "operator_busy_fraction": 0.2500000000000013,
+      "near_contact_frames": 24,
+      "physical_overlap_frames": 24,
+      "contact_vehicle_frames_by_object_kind": {
+        "car": 24
+      },
+      "contact_stationary_vehicle_frames": 24,
+      "occluded_actor_frames": 0,
+      "unsupported_static_objects": 4,
+      "waiting_at_end": 3,
+      "route_replans": 2,
+      "failed_replans": 0,
+      "fraction_scored_frames_outside_training_minmax": 0.9978768577494692,
+      "domain_warning": "合成道路、遮挡观测及控制均有分布偏移；模型未学习建筑/垃圾/围挡",
+      "policy": "learned"
+    }
+  },
+  "paired_main_score_frames": {
+    "total_aligned_frames": 240,
+    "frames_score_or_applicability_differs": 22,
+    "frames_one_score_missing": 2,
+    "frames_both_scores_present": 186,
+    "maximum_absolute_score_difference_when_both_present": 0.0006383718574102902,
+    "tolerance": 1e-12
+  },
+  "paired_main_model_inputs": {
+    "common_scoring_times": 117,
+    "times_observed_scene_fingerprint_differs": 11,
+    "times_feature_values_differ": 10,
+    "times_neighbor_count_differs": 9,
+    "times_valid_observed_history_count_differs": 11,
+    "different_feature_names": [
+      "n0_closing",
+      "n0_history_valid",
+      "n1_clearance",
+      "n1_closing",
+      "n1_heading",
+      "n1_history_valid",
+      "n1_present",
+      "n1_speed",
+      "n1_type",
+      "n1_vx",
+      "n1_vy",
+      "n1_x",
+      "n1_y",
+      "n2_clearance",
+      "n2_closing",
+      "n2_heading",
+      "n2_history_valid",
+      "n2_present",
+      "n2_speed",
+      "n2_type",
+      "n2_vx",
+      "n2_vy",
+      "n2_x",
+      "n2_y",
+      "n3_clearance",
+      "n3_closing",
+      "n3_heading",
+      "n3_history_valid",
+      "n3_speed",
+      "n3_vx",
+      "n3_vy",
+      "n3_x",
+      "n3_y",
+      "n4_clearance",
+      "n4_closing",
+      "n4_heading",
+      "n4_history_valid",
+      "n4_present",
+      "n4_speed",
+      "n4_type",
+      "n4_vx",
+      "n4_x",
+      "n4_y",
+      "n5_clearance",
+      "n5_heading",
+      "n5_present",
+      "n5_speed",
+      "n5_type",
+      "n5_vx",
+      "n5_x",
+      "n5_y",
+      "neighbor_count",
+      "pedestrian_count"
+    ],
+    "feature_difference_tolerance": "numpy.isclose default; NaN equal"
+  },
+  "interpretation": [
+    "Occlusion changes only current and actually recorded past supported-object observations; there is no hidden-history backfill.",
+    "The global renderer may display hidden truth; the model never receives those hidden current tracks.",
+    "This paired synthetic case cannot establish real-world safety or delivery performance.",
+    "Fleet completion, request and contact counts must be read directly; input differences do not imply outcome improvement.",
+    "The intended main route turns 90 degrees, but the main vehicle reaches only 48.75 degrees and remains unfinished in both runs; this audit must not be described as a completed 90-degree turn."
+  ],
+  "source_sha256": {
+    "urban_simulation.py": "18cc4b55f1150da82a95c2ef11c1fad1cbf6e5e2eb831b4c40dee96605bd293f",
+    "urban_worlds.py": "71de26e9ed77c6a62acc2984a7522729c127365cf0d95f3e807ff7a62881fbce",
+    "demo_model.py": "0dc35fac3805a1ca67ab62bbceef420d1abe1a022458d41e0adb1815d5cd345f"
+  },
+  "raw_identifiers_or_coordinates_included": false,
+  "intended_main_route_heading_change_deg": 90.0,
+  "actual_main_full_90_degree_turn_completed": false
+}

@@ -1,0 +1,15 @@
+{
+  "status": "posthoc_synthetic_scenario_extension",
+  "scenarios": ["intersection", "left_turn", "blind_corner", "t_junction", "trash", "construction", "crowd", "mixed"],
+  "model": "original_development_selected_hist_gradient_boosting_full_seed42",
+  "model_training_or_selection_changed": false,
+  "new_real_dataset": false,
+  "gallery": {"domain": "road", "fleet": 6, "operators": 1, "threshold": 0.9556857111879499, "density": 1.0, "occlusion": true, "seed": 42},
+  "paired_visibility_comparison": {"occlusion": [true, false], "same_seed_and_exogenous_actors": true, "interpretation": "conditional_synthetic_mechanism_comparison_not_real_world_effect"},
+  "model_semantic_types": ["vehicle", "pedestrian", "cyclist"],
+  "unsupported_obstacle_types": ["building", "trash", "barrier"],
+  "unsupported_obstacles_mapped_to_vehicle": false,
+  "observation_boundary": "past_and_current_visible_tracks_only_no_hidden_track_history_backfill",
+  "motion_and_assistance": "explicit_kinematic_and_rule_based_mechanisms_not_learned_control",
+  "user_publication_approval": "pending"
+}

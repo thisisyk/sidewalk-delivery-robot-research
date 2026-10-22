@@ -1,0 +1,14 @@
+{
+  "status": "posthoc_exploratory_synthetic_demonstration",
+  "model": "original_dev_selected_hist_gradient_boosting_full_seed42",
+  "original_model_or_threshold_retuned": false,
+  "new_independent_real_data": false,
+  "scenarios": ["crossing", "blocked", "congestion"],
+  "domains": ["road", "robot"],
+  "default": {"scenario": "blocked", "domain": "road", "threshold": 0.9556857111879499, "operators": 1, "fleet": 12, "seed": 42},
+  "demonstration_alternative_threshold": 0.5,
+  "physics": {"duration_s": 120, "dt_s": 0.5, "score_interval_s": 1, "minimum_next_step_clearance_m": 2.25, "fixed_rectangle_orientation": true, "vehicle_dynamics_modeled": false},
+  "toy_assistance": {"waiting_gate_s": 2, "service_s": 15, "queue": "FIFO", "requests_per_vehicle_max": 1, "scripted_side_shift_m": 4.3},
+  "queue_experiment_is_separate": {"review_service_s": [30, 60], "post_event_review_deadline_s": 120, "target_window_s": 3, "all_reviews_after_target_window": true},
+  "not_validated": ["real_assistance_demand", "robot_domain_probability", "continuous_collision_safety", "road_vehicle_dynamics", "causal_safety_effect", "delivery_cost"]
+}

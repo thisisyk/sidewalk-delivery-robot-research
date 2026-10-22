@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-10-22T19:13:04.258705+00:00",
+  "script_sha256": "a5844095bfda47dac9b4398c6ac13fb51fe370fcf0e706101c9a73be7ef4938d",
+  "frozen_prediction_sha256": "6aee5e7fbb5b1b64a833e84ed275cc61c3ba1fe363c1505aa0c2e0a32fbbe227",
+  "original_policy_sha256": "2a18d4cd7dcea29ad064d7fa8d4fa16f6f6bde7f99458ec911dfc93ee3d13207",
+  "primary_selection_sha256": "3c601fbac40c70f0b38c2426abfd4dab38f1fca454005942127dff8a539d780e",
+  "base_seed": 20261023,
+  "seed_derivation": "numpy SeedSequence([base_seed, rate, replicate]); identical streams across policies/staffing/service.",
+  "candidate_rates_per_hour": [
+    60,
+    120,
+    240,
+    480
+  ],
+  "operators": [
+    1,
+    2,
+    4
+  ],
+  "service_seconds": [
+    30,
+    60
+  ],
+  "replicates": 100,
+  "queue_discipline": "FIFO; identical independent servers; no preemption; empty initial system",
+  "target_prediction_window_seconds": 3,
+  "temporal_limitation": "Review duration 30/60 seconds exceeds the three-second label window; every completed review is post-event for this target. The 120-second deadline is an assumed offline audit SLA, not a driving response deadline.",
+  "animation_service_assumption_is_separate": true,
+  "selection": "frozen development thresholds; common label-blind uniforms at score ties",
+  "candidate_sampling": "with replacement from fixed 206 eval scores+labels, equal probability",
+  "model_retrained_or_threshold_tuned": false,
+  "raw_data_or_ids_exported": false,
+  "publication_approval": "pending_user_review",
+  "qa": {
+    "boundary_case_passed": true,
+    "independent_direct_server_reference_checks": 36,
+    "queue_conservation_checked_every_replicate": true,
+    "rho_recomputed_independently_for_every_condition": true,
+    "simulated_queue_conservation_checks": 12000,
+    "analytic_rho_checks": 120,
+    "status": "pass"
+  },
+  "outputs": {
+    "metrics.csv": "5fc2a08628852182db1ef899a7d0ab837d71db5c8bfe80cf299dafe39466c231",
+    "summary.json": "1592d6b68f221a4d604aecd186e70edd14b414340c4911c94bf59a2cc2a182a0",
+    "figure.png": "6d35db681b542ccb049caf35986ff7aec09b26356d0031dfdaa49645c893ec05"
+  }
+}

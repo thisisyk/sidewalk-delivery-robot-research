@@ -1,0 +1,300 @@
+{
+  "status": "complete_conditional_monte_carlo",
+  "source_scenes": 206,
+  "source_proxy_positive": 33,
+  "condition_count": 24,
+  "policy_count": 5,
+  "replicates_per_condition": 100,
+  "total_policy_hour_runs": 12000,
+  "horizon_seconds": 3600.0,
+  "completion_deadline_seconds": 120.0,
+  "policies": {
+    "all_fifo": {
+      "model": "all",
+      "cutoff": null,
+      "tie_probability": 1.0,
+      "nominal_dev_budget": null,
+      "eval_expected_accepted": 206.0,
+      "eval_acceptance_rate": 1.0,
+      "eval_expected_positive_accepted": 33.0,
+      "eval_positive_selection_recall": 1.0
+    },
+    "cv_dev10": {
+      "model": "constant_velocity",
+      "score_column": "constant_velocity",
+      "cutoff": -1.1169606970223165,
+      "tie_probability": 1.0,
+      "nominal_dev_budget": 0.1,
+      "eval_expected_accepted": 27.0,
+      "eval_acceptance_rate": 0.13106796116504854,
+      "eval_expected_positive_accepted": 14.0,
+      "eval_positive_selection_recall": 0.42424242424242425
+    },
+    "histgb_dev05": {
+      "model": "hist_gradient_boosting",
+      "score_column": "full__hist_gradient_boosting__42",
+      "cutoff": 0.9928777164498808,
+      "tie_probability": 1.0,
+      "nominal_dev_budget": 0.05,
+      "eval_expected_accepted": 5.0,
+      "eval_acceptance_rate": 0.024271844660194174,
+      "eval_expected_positive_accepted": 5.0,
+      "eval_positive_selection_recall": 0.15151515151515152
+    },
+    "histgb_dev10": {
+      "model": "hist_gradient_boosting",
+      "score_column": "full__hist_gradient_boosting__42",
+      "cutoff": 0.95568571118795,
+      "tie_probability": 1.0,
+      "nominal_dev_budget": 0.1,
+      "eval_expected_accepted": 14.0,
+      "eval_acceptance_rate": 0.06796116504854369,
+      "eval_expected_positive_accepted": 13.0,
+      "eval_positive_selection_recall": 0.3939393939393939
+    },
+    "histgb_dev20": {
+      "model": "hist_gradient_boosting",
+      "score_column": "full__hist_gradient_boosting__42",
+      "cutoff": 0.0573699581161087,
+      "tie_probability": 1.0,
+      "nominal_dev_budget": 0.2,
+      "eval_expected_accepted": 46.0,
+      "eval_acceptance_rate": 0.22330097087378642,
+      "eval_expected_positive_accepted": 25.0,
+      "eval_positive_selection_recall": 0.7575757575757576
+    }
+  },
+  "target_prediction_window_seconds": 3,
+  "temporal_limitation": "All completed reviews occur after the three-second target window because service is 30/60 seconds. Post-event/offline review planning only; no real-time preventive-intervention claim.",
+  "paired_histgb10_vs_cv10": [
+    {
+      "candidate_rate_per_hour": 60,
+      "operators": 1,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.04084129759129759,
+      "p025": -0.5,
+      "p975": 0.4,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 60,
+      "operators": 1,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.03799768287268288,
+      "p025": -0.5,
+      "p975": 0.4,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 60,
+      "operators": 2,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.04084129759129759,
+      "p025": -0.5,
+      "p975": 0.4,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 60,
+      "operators": 2,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.04104963092463093,
+      "p025": -0.5,
+      "p975": 0.4,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 60,
+      "operators": 4,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.04084129759129759,
+      "p025": -0.5,
+      "p975": 0.4,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 60,
+      "operators": 4,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.04104963092463093,
+      "p025": -0.5,
+      "p975": 0.4,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 120,
+      "operators": 1,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.02535787068718384,
+      "p025": -0.31354166666666666,
+      "p975": 0.28813364055299534,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 120,
+      "operators": 1,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.011602987866824012,
+      "p025": -0.29375,
+      "p975": 0.2617647058823525,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 120,
+      "operators": 2,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.02535787068718384,
+      "p025": -0.31354166666666666,
+      "p975": 0.28813364055299534,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 120,
+      "operators": 2,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.023811144914125667,
+      "p025": -0.31354166666666666,
+      "p975": 0.2725806451612901,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 120,
+      "operators": 4,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.02535787068718384,
+      "p025": -0.31354166666666666,
+      "p975": 0.28813364055299534,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 120,
+      "operators": 4,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.023811144914125667,
+      "p025": -0.31354166666666666,
+      "p975": 0.2725806451612901,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 240,
+      "operators": 1,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.026098292208407696,
+      "p025": -0.18350945494994436,
+      "p975": 0.17757352941176466,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 240,
+      "operators": 1,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": 0.04101897974278363,
+      "p025": -0.1338141025641026,
+      "p975": 0.21077586206896542,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 240,
+      "operators": 2,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.026481627419105827,
+      "p025": -0.18271046420141618,
+      "p975": 0.17757352941176466,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 240,
+      "operators": 2,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.023580845327763823,
+      "p025": -0.18350945494994436,
+      "p975": 0.17757352941176466,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 240,
+      "operators": 4,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.026481627419105827,
+      "p025": -0.18271046420141618,
+      "p975": 0.17757352941176466,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 240,
+      "operators": 4,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.025077573438853636,
+      "p025": -0.18350945494994436,
+      "p975": 0.17757352941176466,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 480,
+      "operators": 1,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.023736757910903128,
+      "p025": -0.19432995028997516,
+      "p975": 0.13196930946291538,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 480,
+      "operators": 1,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": 0.22370314404574715,
+      "p025": 0.10635677036504226,
+      "p975": 0.3425,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 480,
+      "operators": 2,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.033591204311038306,
+      "p025": -0.19432995028997516,
+      "p975": 0.12076999339061459,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 480,
+      "operators": 2,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.011135492641231265,
+      "p025": -0.17181372549019608,
+      "p975": 0.1431457800511509,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 480,
+      "operators": 4,
+      "service_seconds": 30,
+      "histgb10_minus_cv10_timely_recall_mean": -0.033591204311038306,
+      "p025": -0.19432995028997516,
+      "p975": 0.12076999339061459,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    },
+    {
+      "candidate_rate_per_hour": 480,
+      "operators": 4,
+      "service_seconds": 60,
+      "histgb10_minus_cv10_timely_recall_mean": -0.033180984095510895,
+      "p025": -0.1873446561723281,
+      "p975": 0.1266490416391275,
+      "interpretation": "Paired simulation run spread, conditional on empirical sample and assumptions; not population confidence."
+    }
+  ],
+  "qa": {
+    "boundary_case_passed": true,
+    "independent_direct_server_reference_checks": 36,
+    "queue_conservation_checked_every_replicate": true,
+    "rho_recomputed_independently_for_every_condition": true,
+    "simulated_queue_conservation_checks": 12000,
+    "analytic_rho_checks": 120,
+    "status": "pass"
+  },
+  "uncertainty": "Conditional Monte Carlo empirical 2.5/97.5% run quantiles; not confidence intervals for true interventions or model population performance.",
+  "no_real_arrival_or_human_service_measurements": true,
+  "closed_loop_driving": false,
+  "intervention_or_cost_effect_measured": false
+}

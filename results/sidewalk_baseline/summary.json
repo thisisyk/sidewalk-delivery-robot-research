@@ -1,0 +1,108 @@
+{
+  "status": "complete_synthetic_mechanism_study",
+  "real_model": "original_development_selected_hist_gradient_boosting",
+  "model_fit_train_rows": 857,
+  "model_fit_eval_rows": 0,
+  "scenarios": 8,
+  "runs": 16,
+  "gallery_config": {
+    "scenario": "intersection",
+    "domain": "robot",
+    "threshold": 0.95568571118795,
+    "operators": 1,
+    "fleet": 6,
+    "seed": 42,
+    "density": 1.0,
+    "occlusion": true,
+    "duration_s": 120.0,
+    "dt": 0.5,
+    "service_s": 15.0
+  },
+  "new_real_data": false,
+  "simulated_obstacles_are_real_training_labels": false,
+  "unsupported_objects_mapped_to_vehicle": false,
+  "visibility_pair_interpretation": "conditional_on_one_seed_and_toy_world_not_real_sensor_evaluation",
+  "checks": [
+    {
+      "scenario": "intersection",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "intersection",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "left_turn",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "left_turn",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "blind_corner",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "blind_corner",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "t_junction",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "t_junction",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "trash",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "trash",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "construction",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "construction",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "crowd",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "crowd",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "mixed",
+      "occlusion": true,
+      "resource_and_score_bounds": "pass"
+    },
+    {
+      "scenario": "mixed",
+      "occlusion": false,
+      "resource_and_score_bounds": "pass"
+    }
+  ],
+  "publication_approval": "pending_user_review"
+}

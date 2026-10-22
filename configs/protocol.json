@@ -1,0 +1,18 @@
+{
+  "status": "frozen_before_real_evaluation",
+  "dataset": "WOMD v1.3.1 Scenario",
+  "training_shard_ids": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "validation_dev_shard_ids": [0,2,4,6,8],
+  "validation_eval_shard_ids": [1,3,5,7,9],
+  "history_seconds": 1.0,
+  "future_seconds": 3.0,
+  "max_neighbors": 16,
+  "radius_m": 50.0,
+  "primary_threshold_m": 2.0,
+  "sensitivity_thresholds_m": [1.0,3.0],
+  "models": ["logistic_regression","random_forest","hist_gradient_boosting"],
+  "seeds": [42,7,2026],
+  "primary_selection": "full feature seed42 maximum development AP",
+  "bootstrap_draws": 300,
+  "publication_approval": "pending"
+}

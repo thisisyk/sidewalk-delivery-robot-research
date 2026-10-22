@@ -1,0 +1,27 @@
+{
+  "method": "paired_source_shard_bootstrap",
+  "source_groups": 5,
+  "requested_draws": 1000,
+  "seed": 40223,
+  "recall_difference": [
+    {
+      "budget": 0.05,
+      "valid_draws": 1000,
+      "ci95_low": 0.06680161943319837,
+      "ci95_high": 0.26666666666666666
+    },
+    {
+      "budget": 0.1,
+      "valid_draws": 1000,
+      "ci95_low": 0.1388888888888889,
+      "ci95_high": 0.3571428571428572
+    },
+    {
+      "budget": 0.2,
+      "valid_draws": 1000,
+      "ci95_low": -0.05555555555555558,
+      "ci95_high": 0.25
+    }
+  ],
+  "interpretation": "Exploratory pointwise intervals; five shards are not verified independent driving logs; no multiplicity adjustment."
+}

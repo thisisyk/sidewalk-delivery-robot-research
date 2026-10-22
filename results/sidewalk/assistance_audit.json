@@ -1,0 +1,128 @@
+{
+  "status": "pass",
+  "gallery_sha256": "13e308717cda26598bd46e01d05d4e637170b9ef21baeced703a9e82a4e2b92f",
+  "independent_implementation": "saved incident timestamps, queues and actual coordinates; no controller imports",
+  "scene_count": 8,
+  "scenes": [
+    {
+      "scenario": "intersection",
+      "requests": 0,
+      "request_reasons": {},
+      "unscorable_fallback_requests": 0,
+      "commands_issued": 0,
+      "actions": {},
+      "post_command_moving_robot_frames": 0,
+      "assisted_robots_arrived": 0,
+      "onsite_required_robots": 0,
+      "travel_after_assistance_m": 0.0
+    },
+    {
+      "scenario": "left_turn",
+      "requests": 0,
+      "request_reasons": {},
+      "unscorable_fallback_requests": 0,
+      "commands_issued": 0,
+      "actions": {},
+      "post_command_moving_robot_frames": 0,
+      "assisted_robots_arrived": 0,
+      "onsite_required_robots": 0,
+      "travel_after_assistance_m": 0.0
+    },
+    {
+      "scenario": "blind_corner",
+      "requests": 0,
+      "request_reasons": {},
+      "unscorable_fallback_requests": 0,
+      "commands_issued": 0,
+      "actions": {},
+      "post_command_moving_robot_frames": 0,
+      "assisted_robots_arrived": 0,
+      "onsite_required_robots": 0,
+      "travel_after_assistance_m": 0.0
+    },
+    {
+      "scenario": "t_junction",
+      "requests": 7,
+      "request_reasons": {
+        "robot_blockage": 4,
+        "persistent_stall": 3
+      },
+      "unscorable_fallback_requests": 7,
+      "commands_issued": 5,
+      "actions": {
+        "replan_walkway": 4,
+        "onsite_required": 1
+      },
+      "post_command_moving_robot_frames": 0,
+      "assisted_robots_arrived": 0,
+      "onsite_required_robots": 1,
+      "travel_after_assistance_m": 0.0
+    },
+    {
+      "scenario": "trash",
+      "requests": 7,
+      "request_reasons": {
+        "persistent_stall": 4,
+        "robot_blockage": 3
+      },
+      "unscorable_fallback_requests": 7,
+      "commands_issued": 5,
+      "actions": {
+        "onsite_required": 1,
+        "replan_walkway": 4
+      },
+      "post_command_moving_robot_frames": 0,
+      "assisted_robots_arrived": 0,
+      "onsite_required_robots": 1,
+      "travel_after_assistance_m": 0.0
+    },
+    {
+      "scenario": "construction",
+      "requests": 0,
+      "request_reasons": {},
+      "unscorable_fallback_requests": 0,
+      "commands_issued": 0,
+      "actions": {},
+      "post_command_moving_robot_frames": 0,
+      "assisted_robots_arrived": 0,
+      "onsite_required_robots": 0,
+      "travel_after_assistance_m": 0.0
+    },
+    {
+      "scenario": "crowd",
+      "requests": 3,
+      "request_reasons": {
+        "robot_blockage": 2,
+        "persistent_stall": 1
+      },
+      "unscorable_fallback_requests": 3,
+      "commands_issued": 3,
+      "actions": {
+        "replan_walkway": 3
+      },
+      "post_command_moving_robot_frames": 140,
+      "assisted_robots_arrived": 2,
+      "onsite_required_robots": 0,
+      "travel_after_assistance_m": 86.37
+    },
+    {
+      "scenario": "mixed",
+      "requests": 2,
+      "request_reasons": {
+        "persistent_stall": 1,
+        "robot_blockage": 1
+      },
+      "unscorable_fallback_requests": 2,
+      "commands_issued": 2,
+      "actions": {
+        "onsite_required": 2
+      },
+      "post_command_moving_robot_frames": 0,
+      "assisted_robots_arrived": 0,
+      "onsite_required_robots": 2,
+      "travel_after_assistance_m": 0.0
+    }
+  ],
+  "errors": [],
+  "not_a_real_human_operator_or_safety_evaluation": true
+}

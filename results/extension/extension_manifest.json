@@ -1,0 +1,55 @@
+{
+  "created_utc": "2026-10-22T19:07:58.866308+00:00",
+  "status": "complete_exploratory_analysis",
+  "model_retrained": false,
+  "eval_used_to_select_model_or_threshold": false,
+  "new_independent_evaluation_data": false,
+  "n": 206,
+  "positive": 33,
+  "source_shards": 5,
+  "primary_selection": {
+    "model": "hist_gradient_boosting",
+    "seed": 42,
+    "ablation": "full",
+    "threshold_m": 2,
+    "selection_metric": "dev_ap",
+    "dev_ap": 0.741984974414772,
+    "candidate_dev_ap": {
+      "logistic_regression": 0.6533409149929393,
+      "random_forest": 0.7345344353537739,
+      "hist_gradient_boosting": 0.741984974414772
+    },
+    "frozen_before_eval_prediction": true,
+    "frozen_utc": "2026-10-22T05:49:37.485574+00:00"
+  },
+  "input_sha256": "4fec9ad7cef746610716212e68e90c9b77e840e87eec1090b860b339a34b4c34",
+  "frozen_prediction_sha256": "6aee5e7fbb5b1b64a833e84ed275cc61c3ba1fe363c1505aa0c2e0a32fbbe227",
+  "original_run_manifest_sha256": "c7151b40c19be23e6f5f350baecb065fcb9834d6b0339082d677514e1676e519",
+  "original_policy_sha256": "2a18d4cd7dcea29ad064d7fa8d4fa16f6f6bde7f99458ec911dfc93ee3d13207",
+  "script_sha256": "184756eeef643cd4673b7f8035d7c1f89b6ad8ae1a0194fae5994c0b3b2e2e2e",
+  "preset_capacity_budgets": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "subgroup_cutpoints": {
+    "speed_mps": [
+      2,
+      8
+    ],
+    "candidate_count": [
+      4,
+      9
+    ],
+    "current_clearance_m": [
+      5,
+      10
+    ],
+    "object_presence": [
+      "pedestrian",
+      "cyclist"
+    ]
+  },
+  "publication_approval": "pending_user_review",
+  "outputs_contain_identifiers_or_coordinates": false
+}

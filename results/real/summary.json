@@ -1,0 +1,129 @@
+{
+  "primary_status": "eligible_for_limited_empirical_comparison",
+  "primary_selection": {
+    "model": "hist_gradient_boosting",
+    "seed": 42,
+    "ablation": "full",
+    "threshold_m": 2,
+    "selection_metric": "dev_ap",
+    "dev_ap": 0.741984974414772,
+    "candidate_dev_ap": {
+      "logistic_regression": 0.6533409149929393,
+      "random_forest": 0.7345344353537739,
+      "hist_gradient_boosting": 0.741984974414772
+    },
+    "frozen_before_eval_prediction": true,
+    "frozen_utc": "2026-10-22T05:49:37.485574+00:00"
+  },
+  "cohorts": {
+    "2m": {
+      "counts": {
+        "train": {
+          "n": 857,
+          "positive": 172,
+          "negative": 685
+        },
+        "dev": {
+          "n": 200,
+          "positive": 39,
+          "negative": 161
+        },
+        "eval": {
+          "n": 206,
+          "positive": 33,
+          "negative": 173
+        }
+      },
+      "minimum_counts_met": true,
+      "eval_source_shards": 5,
+      "minimum_eval_shards_met": true,
+      "status": "complete"
+    },
+    "1m": {
+      "counts": {
+        "train": {
+          "n": 1374,
+          "positive": 108,
+          "negative": 1266
+        },
+        "dev": {
+          "n": 339,
+          "positive": 16,
+          "negative": 323
+        },
+        "eval": {
+          "n": 341,
+          "positive": 19,
+          "negative": 322
+        }
+      },
+      "minimum_counts_met": true,
+      "eval_source_shards": 5,
+      "minimum_eval_shards_met": true,
+      "status": "complete"
+    },
+    "3m": {
+      "counts": {
+        "train": {
+          "n": 731,
+          "positive": 161,
+          "negative": 570
+        },
+        "dev": {
+          "n": 172,
+          "positive": 41,
+          "negative": 131
+        },
+        "eval": {
+          "n": 177,
+          "positive": 35,
+          "negative": 142
+        }
+      },
+      "minimum_counts_met": true,
+      "eval_source_shards": 5,
+      "minimum_eval_shards_met": true,
+      "status": "complete"
+    }
+  },
+  "provenance": {
+    "preparation_manifest_matches_input": true,
+    "official_download_independently_verified": false,
+    "provenance_sha256": "210c544a24dc2e9c70887ee14066dd3643cd912ba81ff1b0e79d716def595613"
+  },
+  "publication_ready": false,
+  "manual_case_review": "pending",
+  "user_approval": "pending",
+  "primary_comparison": {
+    "ap_difference": 0.28101146316806935,
+    "recall_at_10pct_difference": 0.2727272727272727
+  },
+  "paired_bootstrap": {
+    "draws_requested": 300,
+    "valid_draws": 300,
+    "unit": "source_shard",
+    "source_shards": 5,
+    "original_log_groups_known": false,
+    "caveat": "原始日志未知；区间不能排除重叠窗口相关性，小于五个分片时仅作探索。",
+    "ap_difference": {
+      "ci95_low": 0.1751567135931069,
+      "ci95_high": 0.37824104230358613
+    },
+    "recall_at_10pct_difference": {
+      "ci95_low": 0.13888888888888887,
+      "ci95_high": 0.3571428571428572
+    }
+  },
+  "seed_stability": {
+    "seeds": [
+      42,
+      7,
+      2026
+    ],
+    "n_seeds": 3,
+    "ap_min": 0.7302762063131997,
+    "ap_max": 0.7302762063131997,
+    "recall_10pct_min": 0.48484848484848486,
+    "recall_10pct_max": 0.48484848484848486
+  }
+}

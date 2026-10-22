@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "recorded_utc": "2026-10-22T20:27:45.790829+00:00",
+  "software_tests_passed": 82,
+  "gallery_source_and_input_hashes_match": true,
+  "saved_assistance_lifecycle_and_motion_audit": "pass",
+  "legacy_metrics_match_all_16_pre_fix_settings": true,
+  "original_experiment_code_and_results_unchanged": true,
+  "whole_body_saved_frame_domain_check": "pass",
+  "moving_pedestrian_tracks_across_scenes": 18,
+  "robot_saved_frames_audited": 11232,
+  "person_motion_uses_actual_coordinates": true,
+  "browser_review": {
+    "actual_local_service_updated": true,
+    "robot_only_interface": true,
+    "default_autoplay_observed": true,
+    "play_pause_scrub_checked": true,
+    "scenes_checked": [
+      "crowd",
+      "trash"
+    ],
+    "score_ineligible_request_and_operator_command_visible": true,
+    "workbench_actual_instruction_and_post_assistance_motion_checked": true,
+    "onsite_stop_preserves_unfinished_task": true,
+    "sidewalk_and_crosswalk_separate_from_motor_road": true,
+    "contact_and_incomplete_outcomes_visible": true,
+    "screenshots": [
+      "demo/sidewalk_browser_preview.png",
+      "demo/assistance_browser_preview.png"
+    ]
+  },
+  "deliverable_sha256": {
+    "demo/index.html": "7483067d7532f8f2fa7665fa851e18523ac7d5eb0f50371a90547ce4bacc584d",
+    "demo/sidewalk_atlas.png": "501f3b7bea3e3ae0c4cca813a706050a66b0a691e29261758e57c3082a182853",
+    "demo/sidewalk_scenarios.gif": "dc224cb18830736b61b1149f7f40667f4380a6cd2d9d524c87b39a62af3ce15a",
+    "demo/sidewalk_scenarios.png": "805310759659a32615423eeffa57d19bdeb730166b2a8edb63a8609c926d9e34",
+    "demo/sidewalk_scenarios.manifest.json": "18a1cf75545dc2caac694be3a69167d540cf0bb192c1949d89b8db96063f673d",
+    "demo/sidewalk_browser_preview.png": "9fa4779981111d90f8d4c65abce585c0a18b5b969706118666d37a3d7422ef1b",
+    "demo/assistance_browser_preview.png": "c481ff3987aa11fb0a69688b10414c020ad7e9d5e461b5ed35db2d84dc498502"
+  },
+  "domain_shift": "original road vehicle HistGB; no robot training or robot validation",
+  "negative_outcomes_retained": true,
+  "continuous_time_or_real_safety_verified": false,
+  "cli_credentials_removed": true,
+  "publication_approval": "pending_user_review",
+  "uploaded": false
+}

@@ -1,0 +1,17 @@
+cars_off_road_frames,completed,contact_stationary_vehicle_frames,contact_vehicle_frames_by_object_kind,domain_guard_stop_steps,domain_warning,failed_replans,fraction_scored_frames_outside_training_minmax,mean_wait_s,near_contact_frames,occluded_actor_frames,occlusion,off_walkway_frames,operator_busy_fraction,p95_wait_s,pedestrians_off_walkway_frames,physical_overlap_frames,policy,requests,route_replans,scenario,static_contact_frames,total,unfinished,unsupported_static_objects,waiting_at_end
+0,6,5,{'pedestrian': 5},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,0.88,6,273,True,0,0.0,2.08,0,5,learned,0,0,intersection,0,6,0,4,0
+0,6,5,{'pedestrian': 5},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,0.88,6,0,False,0,0.0,2.08,0,5,learned,0,0,intersection,0,6,0,4,0
+0,6,0,{},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,0.2,0,262,True,0,0.0,0.9,0,0,learned,0,0,left_turn,0,6,0,4,0
+0,6,0,{},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,0.2,0,0,False,0,0.0,0.9,0,0,learned,0,0,left_turn,0,6,0,4,0
+0,6,0,{},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,0.2,0,271,True,0,0.0,0.9,0,0,learned,0,0,blind_corner,0,6,0,5,0
+0,6,0,{},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,0.2,0,0,False,0,0.0,0.9,0,0,learned,0,0,blind_corner,0,6,0,5,0
+0,2,8,{'pedestrian': 8},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,54.4,9,278,True,0,0.0,84.0,0,8,learned,0,0,t_junction,0,6,4,3,4
+0,2,8,{'pedestrian': 8},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,54.4,9,0,False,0,0.0,84.0,0,8,learned,0,0,t_junction,0,6,4,3,4
+0,2,6,{'pedestrian': 6},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,54.97,8,0,True,0,0.0,85.67,0,6,learned,0,0,trash,0,6,4,6,4
+0,2,6,{'pedestrian': 6},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,54.97,8,0,False,0,0.0,85.67,0,6,learned,0,0,trash,0,6,4,6,4
+0,6,6,{'pedestrian': 6},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,1.07,8,0,True,0,0.0,2.18,0,6,learned,0,0,construction,0,6,0,7,0
+0,6,6,{'pedestrian': 6},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,1.07,8,0,False,0,0.0,2.18,0,6,learned,0,0,construction,0,6,0,7,0
+0,3,9,{'pedestrian': 9},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,39.25,12,401,True,0,0.0,81.27,0,9,learned,0,0,crowd,0,6,3,4,3
+0,3,9,{'pedestrian': 9},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,39.25,12,0,False,0,0.0,81.27,0,9,learned,0,0,crowd,0,6,3,4,3
+0,4,4,{'pedestrian': 4},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,34.52,6,464,True,0,0.0,102.32,0,4,learned,0,0,mixed,0,6,2,8,2
+0,4,4,{'pedestrian': 4},0,人行道配送机器人尺寸、速度、步道地图均属原道路车训练域外；原模型分数未经校准，空间域与避让为独立规则,0,1.0,34.52,6,0,False,0,0.0,102.32,0,4,learned,0,0,mixed,0,6,2,8,2

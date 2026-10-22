@@ -1,0 +1,14 @@
+{
+  "status": "approved_for_public_release",
+  "approval_date_client": "2026-10-23",
+  "client_timezone": "Etc/GMT-8",
+  "authorization": "Explicit user request to upload this completed project as a new GitHub project, with the previously specified public visibility.",
+  "repository": "https://github.com/thisisyk/sidewalk-delivery-robot-research",
+  "visibility": "public",
+  "review_archive_sha256": "e623b01f3563f49dbe7eecf4826cf5ce9b7bcfb6747c6fe50a446c4f492bd842",
+  "scope": ["project source", "software tests", "protocols", "research reports", "aggregate evaluation results", "synthetic simulation replays and images"],
+  "excluded": ["raw Waymo dataset", "prepared real sample tables", "real per-scene labels or predictions", "trained weights", "account information", "credentials", "private caches"],
+  "historical_snapshot_note": "Pending approval and uploaded=false fields in earlier experiment, simulation and review snapshots describe their generation time. This record supersedes their publication-approval state without changing frozen scientific results.",
+  "scientific_scope_unchanged": true,
+  "real_robot_safety_validated": false
+}

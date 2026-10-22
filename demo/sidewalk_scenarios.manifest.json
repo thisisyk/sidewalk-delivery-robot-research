@@ -1,0 +1,628 @@
+{
+  "scenarios": [
+    "crowd",
+    "blind_corner",
+    "trash",
+    "mixed"
+  ],
+  "source_sha256": "13e308717cda26598bd46e01d05d4e637170b9ef21baeced703a9e82a4e2b92f",
+  "rendered_frames": 120,
+  "poster_saved_time_s": 70.0,
+  "gif_loops_forever": true,
+  "saved_frame_times_s": [
+    0.5,
+    1.5,
+    2.5,
+    3.5,
+    4.5,
+    5.5,
+    6.5,
+    7.5,
+    8.5,
+    9.5,
+    10.5,
+    11.5,
+    12.5,
+    13.5,
+    14.5,
+    15.5,
+    16.5,
+    17.5,
+    18.5,
+    19.5,
+    20.5,
+    21.5,
+    22.5,
+    23.5,
+    24.5,
+    25.5,
+    26.5,
+    27.5,
+    28.5,
+    29.5,
+    30.5,
+    31.5,
+    32.5,
+    33.5,
+    34.5,
+    35.5,
+    36.5,
+    37.5,
+    38.5,
+    39.5,
+    40.5,
+    41.5,
+    42.5,
+    43.5,
+    44.5,
+    45.5,
+    46.5,
+    47.5,
+    48.5,
+    49.5,
+    50.5,
+    51.5,
+    52.5,
+    53.5,
+    54.5,
+    55.5,
+    56.5,
+    57.5,
+    58.5,
+    59.5,
+    61.0,
+    62.0,
+    63.0,
+    64.0,
+    65.0,
+    66.0,
+    67.0,
+    68.0,
+    69.0,
+    70.0,
+    71.0,
+    72.0,
+    73.0,
+    74.0,
+    75.0,
+    76.0,
+    77.0,
+    78.0,
+    79.0,
+    80.0,
+    81.0,
+    82.0,
+    83.0,
+    84.0,
+    85.0,
+    86.0,
+    87.0,
+    88.0,
+    89.0,
+    90.0,
+    91.0,
+    92.0,
+    93.0,
+    94.0,
+    95.0,
+    96.0,
+    97.0,
+    98.0,
+    99.0,
+    100.0,
+    101.0,
+    102.0,
+    103.0,
+    104.0,
+    105.0,
+    106.0,
+    107.0,
+    108.0,
+    109.0,
+    110.0,
+    111.0,
+    112.0,
+    113.0,
+    114.0,
+    115.0,
+    116.0,
+    117.0,
+    118.0,
+    119.0,
+    120.0
+  ],
+  "gif_duration_ms": 9600,
+  "same_saved_time_in_all_panels": true,
+  "model_recomputed": false,
+  "scores_interpolated_or_imputed": false,
+  "synthetic_motion": true,
+  "domain": "sidewalk_robot",
+  "robot_size_m": [
+    0.9,
+    0.65
+  ],
+  "robot_icons_visually_enlarged": true,
+  "renderer_sha256": "a69dd50ac279212a85d7676a3b708f5ba5fc433a926c6954dc31e64bccb1df08",
+  "command_timeline": {
+    "crowd": [
+      {
+        "id": "robot_0_request_1",
+        "robot_id": 0,
+        "request_reason": "robot_blockage",
+        "requested_at": 48.6,
+        "started_at": 48.6,
+        "issued_at": 63.6,
+        "action": "replan_walkway",
+        "instructions": [
+          "下发新的步道/斑马线路点",
+          "按原速度上限与逐步通行检查执行",
+          "若再次受阻，记录停滞并按冷却和次数限制重新请求"
+        ],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 48.6,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 48.6,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 63.6,
+            "state": "route_executing",
+            "message": "已下发新路点；机器人按原通行约束执行"
+          },
+          {
+            "t": 93.0,
+            "state": "completed",
+            "message": "机器人实际到达任务终点"
+          }
+        ]
+      },
+      {
+        "id": "robot_5_request_1",
+        "robot_id": 5,
+        "request_reason": "persistent_stall",
+        "requested_at": 51.4,
+        "started_at": 63.6,
+        "issued_at": 78.6,
+        "action": "replan_walkway",
+        "instructions": [
+          "下发新的步道/斑马线路点",
+          "按原速度上限与逐步通行检查执行",
+          "若再次受阻，记录停滞并按冷却和次数限制重新请求"
+        ],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 51.4,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 63.6,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 78.6,
+            "state": "route_executing",
+            "message": "已下发新路点；机器人按原通行约束执行"
+          },
+          {
+            "t": 93.7,
+            "state": "completed",
+            "message": "机器人实际到达任务终点"
+          }
+        ]
+      },
+      {
+        "id": "robot_3_request_1",
+        "robot_id": 3,
+        "request_reason": "robot_blockage",
+        "requested_at": 52.1,
+        "started_at": 78.6,
+        "issued_at": 93.6,
+        "action": "replan_walkway",
+        "instructions": [
+          "下发新的步道/斑马线路点",
+          "按原速度上限与逐步通行检查执行",
+          "若再次受阻，记录停滞并按冷却和次数限制重新请求"
+        ],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 52.1,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 78.6,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 93.6,
+            "state": "route_executing",
+            "message": "已下发新路点；机器人按原通行约束执行"
+          },
+          {
+            "t": 112.5,
+            "state": "blocked_after_instruction",
+            "message": "收到指令后仍受阻，继续检测并保留未解决状态"
+          },
+          {
+            "t": 112.6,
+            "state": "route_executing",
+            "message": "机器人按指令实际前进，通行检查保持启用"
+          }
+        ]
+      }
+    ],
+    "blind_corner": [],
+    "trash": [
+      {
+        "id": "robot_0_request_1",
+        "robot_id": 0,
+        "request_reason": "persistent_stall",
+        "requested_at": 37.9,
+        "started_at": 37.9,
+        "issued_at": 52.9,
+        "action": "onsite_required",
+        "instructions": [
+          "保持停车",
+          "记录本次规划未成功",
+          "升级现场检查或清障；任务保留未完成"
+        ],
+        "plan_failure": "conservative_planner_returned_no_route",
+        "execution_events": [
+          {
+            "t": 37.9,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 37.9,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 52.9,
+            "state": "onsite_required",
+            "message": "保持停车，升级现场处理；本模拟不安排虚构的现场清障"
+          }
+        ]
+      },
+      {
+        "id": "robot_3_request_1",
+        "robot_id": 3,
+        "request_reason": "robot_blockage",
+        "requested_at": 40.3,
+        "started_at": 52.9,
+        "issued_at": 67.9,
+        "action": "replan_walkway",
+        "instructions": [
+          "下发新的步道/斑马线路点",
+          "按原速度上限与逐步通行检查执行",
+          "若再次受阻，记录停滞并按冷却和次数限制重新请求"
+        ],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 40.3,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 52.9,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 67.9,
+            "state": "route_executing",
+            "message": "已下发新路点；机器人按原通行约束执行"
+          },
+          {
+            "t": 69.8,
+            "state": "blocked_after_instruction",
+            "message": "收到指令后仍受阻，继续检测并保留未解决状态"
+          },
+          {
+            "t": 82.9,
+            "state": "replaced_by_retry",
+            "message": "再次请求协助；前一条指令未结束任务"
+          }
+        ]
+      },
+      {
+        "id": "robot_2_request_1",
+        "robot_id": 2,
+        "request_reason": "robot_blockage",
+        "requested_at": 41.4,
+        "started_at": 67.9,
+        "issued_at": 82.9,
+        "action": "replan_walkway",
+        "instructions": [
+          "下发新的步道/斑马线路点",
+          "按原速度上限与逐步通行检查执行",
+          "若再次受阻，记录停滞并按冷却和次数限制重新请求"
+        ],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 41.4,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 67.9,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 82.9,
+            "state": "route_executing",
+            "message": "已下发新路点；机器人按原通行约束执行"
+          },
+          {
+            "t": 84.8,
+            "state": "blocked_after_instruction",
+            "message": "收到指令后仍受阻，继续检测并保留未解决状态"
+          },
+          {
+            "t": 97.9,
+            "state": "replaced_by_retry",
+            "message": "再次请求协助；前一条指令未结束任务"
+          }
+        ]
+      },
+      {
+        "id": "robot_5_request_1",
+        "robot_id": 5,
+        "request_reason": "robot_blockage",
+        "requested_at": 53.0,
+        "started_at": 82.9,
+        "issued_at": 97.9,
+        "action": "replan_walkway",
+        "instructions": [
+          "下发新的步道/斑马线路点",
+          "按原速度上限与逐步通行检查执行",
+          "若再次受阻，记录停滞并按冷却和次数限制重新请求"
+        ],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 53.0,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 82.9,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 97.9,
+            "state": "route_executing",
+            "message": "已下发新路点；机器人按原通行约束执行"
+          },
+          {
+            "t": 99.8,
+            "state": "blocked_after_instruction",
+            "message": "收到指令后仍受阻，继续检测并保留未解决状态"
+          },
+          {
+            "t": 112.9,
+            "state": "replaced_by_retry",
+            "message": "再次请求协助；前一条指令未结束任务"
+          }
+        ]
+      },
+      {
+        "id": "robot_3_request_2",
+        "robot_id": 3,
+        "request_reason": "persistent_stall",
+        "requested_at": 82.9,
+        "started_at": 97.9,
+        "issued_at": 112.9,
+        "action": "replan_walkway",
+        "instructions": [
+          "下发新的步道/斑马线路点",
+          "按原速度上限与逐步通行检查执行",
+          "若再次受阻，记录停滞并按冷却和次数限制重新请求"
+        ],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 82.9,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 97.9,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 112.9,
+            "state": "route_executing",
+            "message": "已下发新路点；机器人按原通行约束执行"
+          },
+          {
+            "t": 114.8,
+            "state": "blocked_after_instruction",
+            "message": "收到指令后仍受阻，继续检测并保留未解决状态"
+          }
+        ]
+      },
+      {
+        "id": "robot_2_request_2",
+        "robot_id": 2,
+        "request_reason": "persistent_stall",
+        "requested_at": 97.9,
+        "started_at": 112.9,
+        "issued_at": null,
+        "action": null,
+        "instructions": [],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 97.9,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 112.9,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          }
+        ]
+      },
+      {
+        "id": "robot_5_request_2",
+        "robot_id": 5,
+        "request_reason": "persistent_stall",
+        "requested_at": 112.9,
+        "started_at": null,
+        "issued_at": null,
+        "action": null,
+        "instructions": [],
+        "plan_failure": null,
+        "execution_events": [
+          {
+            "t": 112.9,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          }
+        ]
+      }
+    ],
+    "mixed": [
+      {
+        "id": "robot_0_request_1",
+        "robot_id": 0,
+        "request_reason": "persistent_stall",
+        "requested_at": 21.3,
+        "started_at": 21.3,
+        "issued_at": 36.3,
+        "action": "onsite_required",
+        "instructions": [
+          "保持停车",
+          "记录本次规划未成功",
+          "升级现场检查或清障；任务保留未完成"
+        ],
+        "plan_failure": "conservative_planner_returned_no_route",
+        "execution_events": [
+          {
+            "t": 21.3,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 21.3,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 36.3,
+            "state": "onsite_required",
+            "message": "保持停车，升级现场处理；本模拟不安排虚构的现场清障"
+          }
+        ]
+      },
+      {
+        "id": "robot_3_request_1",
+        "robot_id": 3,
+        "request_reason": "robot_blockage",
+        "requested_at": 23.5,
+        "started_at": 36.3,
+        "issued_at": 51.3,
+        "action": "onsite_required",
+        "instructions": [
+          "保持停车",
+          "记录本次规划未成功",
+          "升级现场检查或清障；任务保留未完成"
+        ],
+        "plan_failure": "conservative_planner_returned_no_route",
+        "execution_events": [
+          {
+            "t": 23.5,
+            "state": "queued",
+            "message": "协助请求进入FIFO队列"
+          },
+          {
+            "t": 36.3,
+            "state": "reviewing",
+            "message": "模拟协助员占用席位，检查当前观测与已知地图"
+          },
+          {
+            "t": 51.3,
+            "state": "onsite_required",
+            "message": "保持停车，升级现场处理；本模拟不安排虚构的现场清障"
+          }
+        ]
+      }
+    ]
+  },
+  "command_visibility_gating": "finished_at <= saved frame t; final incident.execution_state never used",
+  "incident_selection_policy": "latest already-issued command by finished_at regardless of outcome; otherwise latest already-requested incident",
+  "travel_evidence": "current saved robot.assisted_travel_m only; not final incident travel",
+  "person_motion": {
+    "crowd": {
+      "moving_pedestrian_ids": 4,
+      "same_id_displaced_frame_pairs": 757,
+      "max_saved_step_m": 0.6500000000000199,
+      "positions_reconstructed": false
+    },
+    "blind_corner": {
+      "moving_pedestrian_ids": 2,
+      "same_id_displaced_frame_pairs": 373,
+      "max_saved_step_m": 0.6000000000000085,
+      "positions_reconstructed": false
+    },
+    "trash": {
+      "moving_pedestrian_ids": 2,
+      "same_id_displaced_frame_pairs": 323,
+      "max_saved_step_m": 0.5500000000000114,
+      "positions_reconstructed": false
+    },
+    "mixed": {
+      "moving_pedestrian_ids": 2,
+      "same_id_displaced_frame_pairs": 373,
+      "max_saved_step_m": 0.6000000000000085,
+      "positions_reconstructed": false
+    }
+  },
+  "domain_counts": {
+    "crowd": {
+      "off_walkway_frames": 0,
+      "cars_off_road_frames": 0,
+      "pedestrians_off_walkway_frames": 0,
+      "physical_overlap_frames": 11
+    },
+    "blind_corner": {
+      "off_walkway_frames": 0,
+      "cars_off_road_frames": 0,
+      "pedestrians_off_walkway_frames": 0,
+      "physical_overlap_frames": 0
+    },
+    "trash": {
+      "off_walkway_frames": 0,
+      "cars_off_road_frames": 0,
+      "pedestrians_off_walkway_frames": 0,
+      "physical_overlap_frames": 6
+    },
+    "mixed": {
+      "off_walkway_frames": 0,
+      "cars_off_road_frames": 0,
+      "pedestrians_off_walkway_frames": 0,
+      "physical_overlap_frames": 4
+    }
+  },
+  "contact_highlight": "saved contact_vehicle_ids; not an independent collision count",
+  "bytes": 10409784
+}

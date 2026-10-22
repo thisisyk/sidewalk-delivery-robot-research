@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "checks": 73,
+  "capacity_rows_recomputed": 48,
+  "subgroup_partition_checks": 15,
+  "calibration_bins_recomputed": 10,
+  "public_aggregate_scan": "pass",
+  "method": "Independent stdlib-only recomputation, no shared metric functions.",
+  "figure_visually_reviewed": true,
+  "no_retraining_or_threshold_changes": true
+}

@@ -1,0 +1,187 @@
+{
+  "status": "pass_with_explicit_toy_assumptions",
+  "checked_at_utc": "2026-10-22T19:20:01.247870+00:00",
+  "synthetic": true,
+  "actual_original_model_scores": true,
+  "model_reproduction": "pass",
+  "software_tests_passed": 45,
+  "tests_use_synthetic_doubles_as_software_checks_only": true,
+  "cases": [
+    {
+      "name": "original_development_threshold",
+      "config": {
+        "scenario": "blocked",
+        "domain": "road",
+        "threshold": 0.95568571118795,
+        "operators": 1,
+        "fleet": 12,
+        "seed": 42,
+        "duration_s": 120.0,
+        "dt": 0.5,
+        "service_s": 15.0
+      },
+      "summary": {
+        "completed": 8,
+        "total": 12,
+        "mean_wait_s": 30.71,
+        "p95_wait_s": 101.27,
+        "requests": 0,
+        "operator_busy_fraction": 0.0,
+        "near_contact_frames": 0,
+        "domain_warning": "道路车尺寸接近训练对象，但合成运动/地图仍有分布偏移",
+        "fraction_scored_frames_outside_training_minmax": 1.0,
+        "unfinished": 4,
+        "policy": "learned"
+      },
+      "comparison": [
+        {
+          "name": "学习模型门控",
+          "completed": 8,
+          "total": 12,
+          "mean_wait_s": 30.71,
+          "p95_wait_s": 101.27,
+          "requests": 0,
+          "operator_busy_fraction": 0.0,
+          "near_contact_frames": 0,
+          "domain_warning": "道路车尺寸接近训练对象，但合成运动/地图仍有分布偏移",
+          "fraction_scored_frames_outside_training_minmax": 1.0,
+          "unfinished": 4,
+          "policy": "learned"
+        },
+        {
+          "name": "等待2秒即请求",
+          "completed": 12,
+          "total": 12,
+          "mean_wait_s": 8.21,
+          "p95_wait_s": 29.75,
+          "requests": 4,
+          "operator_busy_fraction": 0.5,
+          "near_contact_frames": 0,
+          "domain_warning": "道路车尺寸接近训练对象，但合成运动/地图仍有分布偏移",
+          "fraction_scored_frames_outside_training_minmax": null,
+          "unfinished": 0,
+          "policy": "all"
+        },
+        {
+          "name": "仅自主等待",
+          "completed": 8,
+          "total": 12,
+          "mean_wait_s": 30.71,
+          "p95_wait_s": 101.27,
+          "requests": 0,
+          "operator_busy_fraction": 0.0,
+          "near_contact_frames": 0,
+          "domain_warning": "道路车尺寸接近训练对象，但合成运动/地图仍有分布偏移",
+          "fraction_scored_frames_outside_training_minmax": null,
+          "unfinished": 4,
+          "policy": "no_assist"
+        }
+      ],
+      "frames": 240,
+      "served_unique_vehicles": 0,
+      "resource_and_completion_checks": "pass"
+    },
+    {
+      "name": "exploratory_050_threshold",
+      "config": {
+        "scenario": "blocked",
+        "domain": "road",
+        "threshold": 0.5,
+        "operators": 1,
+        "fleet": 12,
+        "seed": 42,
+        "duration_s": 120.0,
+        "dt": 0.5,
+        "service_s": 15.0
+      },
+      "summary": {
+        "completed": 11,
+        "total": 12,
+        "mean_wait_s": 13.33,
+        "p95_wait_s": 51.02,
+        "requests": 3,
+        "operator_busy_fraction": 0.375,
+        "near_contact_frames": 0,
+        "domain_warning": "道路车尺寸接近训练对象，但合成运动/地图仍有分布偏移",
+        "fraction_scored_frames_outside_training_minmax": 0.9846449136276392,
+        "unfinished": 1,
+        "policy": "learned"
+      },
+      "comparison": [
+        {
+          "name": "学习模型门控",
+          "completed": 11,
+          "total": 12,
+          "mean_wait_s": 13.33,
+          "p95_wait_s": 51.02,
+          "requests": 3,
+          "operator_busy_fraction": 0.375,
+          "near_contact_frames": 0,
+          "domain_warning": "道路车尺寸接近训练对象，但合成运动/地图仍有分布偏移",
+          "fraction_scored_frames_outside_training_minmax": 0.9846449136276392,
+          "unfinished": 1,
+          "policy": "learned"
+        },
+        {
+          "name": "等待2秒即请求",
+          "completed": 12,
+          "total": 12,
+          "mean_wait_s": 8.21,
+          "p95_wait_s": 29.75,
+          "requests": 4,
+          "operator_busy_fraction": 0.5,
+          "near_contact_frames": 0,
+          "domain_warning": "道路车尺寸接近训练对象，但合成运动/地图仍有分布偏移",
+          "fraction_scored_frames_outside_training_minmax": null,
+          "unfinished": 0,
+          "policy": "all"
+        },
+        {
+          "name": "仅自主等待",
+          "completed": 8,
+          "total": 12,
+          "mean_wait_s": 30.71,
+          "p95_wait_s": 101.27,
+          "requests": 0,
+          "operator_busy_fraction": 0.0,
+          "near_contact_frames": 0,
+          "domain_warning": "道路车尺寸接近训练对象，但合成运动/地图仍有分布偏移",
+          "fraction_scored_frames_outside_training_minmax": null,
+          "unfinished": 4,
+          "policy": "no_assist"
+        }
+      ],
+      "frames": 240,
+      "served_unique_vehicles": 3,
+      "resource_and_completion_checks": "pass"
+    }
+  ],
+  "frozen_original_outputs_unchanged": true,
+  "browser_qa": {
+    "live_api_loaded": true,
+    "threshold_050_recompute_changed_requests_and_completion": true,
+    "playback_advances_and_stops_at_end": true,
+    "pause_and_scrub_state_verified": true,
+    "screenshot": "demo/browser_preview.png",
+    "offline_replay_source_syntax_checked": true
+  },
+  "not_validated": [
+    "assistance demand",
+    "robot calibration",
+    "vehicle dynamics",
+    "continuous collision safety",
+    "real delivery cost",
+    "causal safety effect"
+  ],
+  "user_publication_approval": "pending",
+  "uploaded": false,
+  "source_hashes": {
+    "src/delivery_risk/demo_model.py": "0dc35fac3805a1ca67ab62bbceef420d1abe1a022458d41e0adb1815d5cd345f",
+    "src/delivery_risk/simulation.py": "42d65423307a245d8a1cf6cbab9c3db7c80d33b8999de9406e918d0c93c6b3f2",
+    "scripts/serve_demo.py": "52ed44c3eacaba2fbd93be8070e9eb98ad4f9b49169f497fa8d665b304fa5493",
+    "demo/index.html": "93790977a6b07fefa5d2d678348bc572644bb3090f124d491144f73f5f57d337",
+    "demo/example_run.js": "6f7d1ffcfd018e7956cb800e1825c5260058ebe47d0b64dae4f406b5a6f41be3",
+    "demo/threshold_050_run.json": "edd80cf1526fdef09cff0402218f95e37ed0c229eba5897ad670073e1273ede8",
+    "configs/simulation_protocol.json": "e7e0f921b4863b178fad1188634daf6e8a2f1393d4a5571013f6be3d4ee8d0af"
+  }
+}
