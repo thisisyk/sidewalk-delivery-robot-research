@@ -1,0 +1,40 @@
+DISTRIBUTED WOD MODEL — NON-COMMERCIAL USE ONLY
+
+This trained model, including its architecture, weights, parameters, and
+associated derivatives, is released under the Waymo Dataset License Agreement
+for Non-Commercial Use (March 2025). Any downstream use or modification is
+subject to that Agreement, including its non-commercial restrictions.
+
+A complete copy accompanies this model at:
+../licenses/WAYMO_DATASET_LICENSE_NON_COMMERCIAL_MARCH_2025.txt
+Official source: https://waymo.com/open/terms/
+
+This model was made using the Waymo Open Dataset, provided by Waymo LLC under
+the Waymo Dataset License Agreement for Non-Commercial Use, available at
+https://waymo.com/open/terms/, and your access and use of such work are governed
+by the terms and conditions therein.
+
+Section 4(a) prohibits use of the Dataset, trained models, or their weights or
+biases in operation of a vehicle or to assist vehicle operation, in Production
+Systems as defined in the Agreement, or for primarily commercial purposes.
+This artifact is for offline non-commercial research and synthetic simulation.
+
+The model is a reproduction of the frozen full-feature HistGradientBoosting
+selection (seed 42), fitted only on the original 857 eligible training rows.
+It predicts a three-second/two-metre close-interaction proxy on filtered road
+vehicle data. It does not predict a validated collision or intervention
+probability and is not validated for sidewalk delivery robots or real control.
+
+The original run did not save a weight file. This distribution adds a new
+serialization after deterministic reproduction and parity verification; the
+original scientific results and model selection remain unchanged.
+
+Raw Waymo records are not included. Each dataset recipient must register and
+accept the official terms and obtain the data through Waymo's official source.
+
+Citation:
+@misc{waymo_open_dataset,
+  title = {Waymo Open Dataset: An autonomous driving dataset},
+  website = {\url{https://www.waymo.com/open}},
+  year = {2019-2025}
+}

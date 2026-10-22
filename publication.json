@@ -6,9 +6,46 @@
   "repository": "https://github.com/thisisyk/sidewalk-delivery-robot-research",
   "visibility": "public",
   "review_archive_sha256": "e623b01f3563f49dbe7eecf4826cf5ce9b7bcfb6747c6fe50a446c4f492bd842",
-  "scope": ["project source", "software tests", "protocols", "research reports", "aggregate evaluation results", "synthetic simulation replays and images"],
-  "excluded": ["raw Waymo dataset", "prepared real sample tables", "real per-scene labels or predictions", "trained weights", "account information", "credentials", "private caches"],
-  "historical_snapshot_note": "Pending approval and uploaded=false fields in earlier experiment, simulation and review snapshots describe their generation time. This record supersedes their publication-approval state without changing frozen scientific results.",
+  "scope": [
+    "project source",
+    "software tests",
+    "protocols",
+    "research reports",
+    "aggregate evaluation results",
+    "synthetic simulation replays and images",
+    "published frozen model weights and accompanying license",
+    "official dataset retrieval manifest and checksum tool"
+  ],
+  "excluded": [
+    "raw Waymo dataset",
+    "prepared real sample tables",
+    "real per-scene labels or predictions",
+    "account information",
+    "credentials",
+    "private caches"
+  ],
+  "historical_snapshot_note": "Pending approval and uploaded=false fields in earlier experiment, simulation and review snapshots describe their generation time. This record supersedes their publication-approval state without changing frozen scientific results. Earlier exclusions of trained weights describe the first source-only release; this additional user request authorizes the separately audited non-commercial model distribution. Historical no_weights_saved fields remain factual snapshots.",
   "scientific_scope_unchanged": true,
-  "real_robot_safety_validated": false
+  "real_robot_safety_validated": false,
+  "additional_user_authorization": {
+    "date_client": "2026-10-23",
+    "request": "继续上传原始数据 模型其权重"
+  },
+  "source_publication_commit": "e3a260001b34d982f72a5ac655e3e8dcd560cc6e",
+  "model_publication": {
+    "status": "approved_for_public_release_under_waymo_noncommercial_terms",
+    "artifact": "models/frozen_histgb_seed42.joblib",
+    "sha256": "97d3ee38b81bfbc78739a066214e428d444740a9fc55ff7240250e5d87a76c7a",
+    "bytes": 236606,
+    "provenance": "Re-fitted the frozen train-only selection; not an originally saved weight file.",
+    "manifest": "models/frozen_histgb_seed42.manifest.json",
+    "full_agreement": "licenses/WAYMO_DATASET_LICENSE_NON_COMMERCIAL_MARCH_2025.txt",
+    "notice": "models/NOTICE.txt"
+  },
+  "raw_dataset_publication": {
+    "uploaded": false,
+    "license_url": "https://waymo.com/open/terms/",
+    "reason": "Section 2(b) permits dataset distribution only to registered recipients who agreed to the terms; unrestricted public GitHub download cannot enforce that condition.",
+    "official_retrieval_manifest": "configs/womd_download_manifest.json"
+  }
 }

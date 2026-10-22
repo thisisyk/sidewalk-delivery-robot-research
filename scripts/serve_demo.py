@@ -27,13 +27,28 @@ def information(model):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--samples", type=Path, default=ROOT / "artifacts/prepared/samples.csv")
+    model_source = parser.add_mutually_exclusive_group()
+    model_source.add_argument("--samples", type=Path, help="Reproduce the frozen fit from local, licensed prepared samples")
+    model_source.add_argument("--model-artifact", type=Path, help="Load the published fitted model without raw/prepared data")
+    parser.add_argument("--model-manifest", type=Path, help="Published manifest containing the expected model SHA256")
+    parser.add_argument("--trust-model-artifact", action="store_true", help="Only use for a trusted publisher's verified joblib artifact; loading untrusted pickle/joblib can execute code")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--export-example", action="store_true")
     args = parser.parse_args()
-    if not args.samples.is_file():
-        parser.error("Original local prepared samples required for model inference; see README. Offline animation still works from demo/index.html.")
-    model = load_frozen_demo_model(args.samples)
+    if args.model_artifact:
+        from delivery_risk.model_artifact import load_model_artifact
+        try:
+            model = load_model_artifact(args.model_artifact, manifest_path=args.model_manifest,
+                                        trusted=args.trust_model_artifact)
+        except (ValueError, OSError) as exc:
+            parser.error(str(exc))
+    else:
+        if args.model_manifest or args.trust_model_artifact:
+            parser.error("--model-manifest and --trust-model-artifact require --model-artifact")
+        samples = args.samples or ROOT / "artifacts/prepared/samples.csv"
+        if not samples.is_file():
+            parser.error("Use a trusted published --model-artifact, or provide --samples from your licensed data. Offline animation still works from demo/index.html.")
+        model = load_frozen_demo_model(samples)
     info = information(model)
     cache, lock = {}, threading.Lock()
     def run(config):

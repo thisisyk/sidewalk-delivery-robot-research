@@ -1,0 +1,166 @@
+{
+  "dataset": "Waymo Open Motion Dataset v1.3.1 Scenario",
+  "official_registration": "https://waymo.com/open/download/",
+  "license_url": "https://waymo.com/open/terms/",
+  "raw_records_in_repository": false,
+  "access": "Each recipient must register and agree to the Waymo terms and download directly from the official bucket using their own authorized account.",
+  "source": "results/real/source_manifest.json",
+  "file_count": 22,
+  "total_bytes": 8349457941,
+  "files": [
+    {
+      "path": "training/training.tfrecord-00000-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00000-of-01000",
+      "bytes": 454771008,
+      "sha256": "050b8f46e94351d0ca51213e196d5e550b6b1cecd05dce27f8d8ffff93121652"
+    },
+    {
+      "path": "training/training.tfrecord-00001-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00001-of-01000",
+      "bytes": 481162498,
+      "sha256": "5234b563b7dda0203304a960ab82f61fca54cb2b5884cbe98316ad1c3a6acf4a"
+    },
+    {
+      "path": "training/training.tfrecord-00002-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00002-of-01000",
+      "bytes": 503552651,
+      "sha256": "9e9035589d2f7236e13a951ccbc0c65f5d090fc9a21ae6e964c2de92023632ad"
+    },
+    {
+      "path": "training/training.tfrecord-00003-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00003-of-01000",
+      "bytes": 449454935,
+      "sha256": "5e4ab87a7171ee8f8dc8662cc742dec5b11dde56bad9f97660b3d9cf738569f0"
+    },
+    {
+      "path": "training/training.tfrecord-00004-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00004-of-01000",
+      "bytes": 444764080,
+      "sha256": "9906695463347f28a89f1b0457a7235772f57bae9f714fb8f01d2d97aec8e897"
+    },
+    {
+      "path": "training/training.tfrecord-00005-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00005-of-01000",
+      "bytes": 471872558,
+      "sha256": "da7766cab5f04c333f0ca1f3be34c48410d43a861ed879fa2781c3acc718c2bd"
+    },
+    {
+      "path": "training/training.tfrecord-00006-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00006-of-01000",
+      "bytes": 445079149,
+      "sha256": "37a2f137e00746b89551e63d5e5e50cd1fdb6a5d2907a793c06e6024118674e9"
+    },
+    {
+      "path": "training/training.tfrecord-00007-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00007-of-01000",
+      "bytes": 462647173,
+      "sha256": "bdf31786164b63297aadb1181b23ba6e01970062c44d00e62e791b0157ade5c7"
+    },
+    {
+      "path": "training/training.tfrecord-00008-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00008-of-01000",
+      "bytes": 447484595,
+      "sha256": "ba2ebe00fcfa9cd7a4b8ad37ec492b4bfdfc44c00dd777427c8cd15b80b4c10d"
+    },
+    {
+      "path": "training/training.tfrecord-00009-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00009-of-01000",
+      "bytes": 434071453,
+      "sha256": "76d87e7e8d3bc576489ecfca591af672445d4e5cfd4d1230d470d68f613184b3"
+    },
+    {
+      "path": "training/training.tfrecord-00010-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00010-of-01000",
+      "bytes": 485036616,
+      "sha256": "8303b5c9d058cd273569212b5c8a17d778146556a054438c0367f1a54177edab"
+    },
+    {
+      "path": "training/training.tfrecord-00011-of-01000",
+      "reproduction_split": "train",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/training/training.tfrecord-00011-of-01000",
+      "bytes": 495939103,
+      "sha256": "4bcff747cd2f6adfefb3af918ccbd098832461bd2d329b1fff9668bf3cde4baf"
+    },
+    {
+      "path": "validation/validation.tfrecord-00000-of-00150",
+      "reproduction_split": "dev",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00000-of-00150",
+      "bytes": 262636608,
+      "sha256": "272260d9e724f429fd41ede3bbbb4776a6eb08aa419486317f6a2896205d3e18"
+    },
+    {
+      "path": "validation/validation.tfrecord-00002-of-00150",
+      "reproduction_split": "dev",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00002-of-00150",
+      "bytes": 271464873,
+      "sha256": "f1869b3665ca4ad58feaa1ebd71b1e8dc3535cebb0c9ef6a39e90edc83627f1b"
+    },
+    {
+      "path": "validation/validation.tfrecord-00004-of-00150",
+      "reproduction_split": "dev",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00004-of-00150",
+      "bytes": 260872317,
+      "sha256": "a604d20abe02000ba005908dffada7cc54d1d0569b145818796d8f3cbd219ece"
+    },
+    {
+      "path": "validation/validation.tfrecord-00006-of-00150",
+      "reproduction_split": "dev",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00006-of-00150",
+      "bytes": 291532778,
+      "sha256": "fd2b92df773b6beff50b2f0d03845ccdbeaf88132175d8f6c94a7889141d1aa3"
+    },
+    {
+      "path": "validation/validation.tfrecord-00008-of-00150",
+      "reproduction_split": "dev",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00008-of-00150",
+      "bytes": 291303216,
+      "sha256": "2d42c0751ba13fc60ee5b69288876a117f9e055db877332c25a8e87af2737daf"
+    },
+    {
+      "path": "validation/validation.tfrecord-00001-of-00150",
+      "reproduction_split": "eval",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00001-of-00150",
+      "bytes": 286425611,
+      "sha256": "4b150d62aa0d600750f64f04f8c7e914bf4ba6067cdf23e2e1d9b0a0876fa062"
+    },
+    {
+      "path": "validation/validation.tfrecord-00003-of-00150",
+      "reproduction_split": "eval",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00003-of-00150",
+      "bytes": 277970112,
+      "sha256": "3549622d00609ea11416009694f31bd0f14742039c933f7326cd1dfae34292d0"
+    },
+    {
+      "path": "validation/validation.tfrecord-00005-of-00150",
+      "reproduction_split": "eval",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00005-of-00150",
+      "bytes": 292975578,
+      "sha256": "c7452d1890524e81f4a858a875aa9f6566b3017f3556b96f6929d50b0f6a2e82"
+    },
+    {
+      "path": "validation/validation.tfrecord-00007-of-00150",
+      "reproduction_split": "eval",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00007-of-00150",
+      "bytes": 246887249,
+      "sha256": "c017ab0a5f0f8d0396bcd238c1f54321198ede495060c488a897e12f30d50f78"
+    },
+    {
+      "path": "validation/validation.tfrecord-00009-of-00150",
+      "reproduction_split": "eval",
+      "uri": "gs://waymo_open_dataset_motion_v_1_3_1/uncompressed/scenario/validation/validation.tfrecord-00009-of-00150",
+      "bytes": 291553780,
+      "sha256": "09ac3a742f0a5230c993415921e2bc91bc1de72139c997933a23653f47a8fdf3"
+    }
+  ]
+}

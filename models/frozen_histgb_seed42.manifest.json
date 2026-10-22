@@ -1,0 +1,102 @@
+{
+  "format": "delivery-risk-frozen-histgb-v1",
+  "artifact": {
+    "filename": "frozen_histgb_seed42.joblib",
+    "sha256": "97d3ee38b81bfbc78739a066214e428d444740a9fc55ff7240250e5d87a76c7a",
+    "bytes": 236606
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.7.2",
+    "joblib": "1.6.0"
+  },
+  "feature_count": 194,
+  "feature_order_sha256": "506f0218193a81346502d811e72bf11540f2cace0ba7d5a29785eb8b3ddfbbcf",
+  "training_provenance": "Re-fitted the frozen train-only selection; not an originally saved weight file.",
+  "original_run_saved_weights": false,
+  "raw_records_included": false,
+  "fit_audit": {
+    "model": "hist_gradient_boosting",
+    "seed": 42,
+    "ablation": "full",
+    "threshold_m": 2,
+    "feature_count": 194,
+    "input_sha256": "4fec9ad7cef746610716212e68e90c9b77e840e87eec1090b860b339a34b4c34",
+    "training_rows": 857,
+    "training_positive": 172,
+    "fit_splits": [
+      "train"
+    ],
+    "development_rows_used_for_fit": 0,
+    "evaluation_rows_used_for_fit": 0,
+    "selection_repeated": false,
+    "original_feature_list_sha256": "4292c5abc38bafd86e1a0ffdaf79f6a11839f2fed36840214afeaaf36e76cf78",
+    "original_selection_sha256": "3c601fbac40c70f0b38c2426abfd4dab38f1fca454005942127dff8a539d780e",
+    "frozen_model_code_sha256": {
+      "experiment.py": "9b2997a6ba2b904546b1897e8cace28cdc679b4382bc1ebe6d4985ffdb9b2183",
+      "samples.py": "ce1f3653a2bfabbc7f446ced3ad395c7a64567fea2aa800f6d9a377689a8ccd1",
+      "geometry.py": "3ea3f17d43415ded854a313c5551a60b0e42463995078bf223aa245980759b36"
+    },
+    "sklearn_version": "1.7.2",
+    "feature_order_sha256": "506f0218193a81346502d811e72bf11540f2cace0ba7d5a29785eb8b3ddfbbcf"
+  },
+  "score_semantics": "uncalibrated model score for the filtered 3-second / 2-metre clearance proxy; not intervention probability, collision probability, or a control action",
+  "supporting_files": [
+    {
+      "path": "../licenses/WAYMO_DATASET_LICENSE_NON_COMMERCIAL_MARCH_2025.txt",
+      "sha256": "322c94f4dce1e42f1640c2a48be70f695a24ed39d5472d3efa0d8d3ff4147815"
+    },
+    {
+      "path": "NOTICE.txt",
+      "sha256": "db3d3da536fa38f6863020c1d01b26e019180e65b9119f5537980fdc1d1094e5"
+    }
+  ],
+  "serialization": "joblib/pickle; load only a trusted publisher's artifact with verified SHA256",
+  "parity_audit": {
+    "model": "hist_gradient_boosting",
+    "seed": 42,
+    "ablation": "full",
+    "threshold_m": 2,
+    "feature_count": 194,
+    "input_sha256": "4fec9ad7cef746610716212e68e90c9b77e840e87eec1090b860b339a34b4c34",
+    "training_rows": 857,
+    "training_positive": 172,
+    "fit_splits": [
+      "train"
+    ],
+    "development_rows_used_for_fit": 0,
+    "evaluation_rows_used_for_fit": 0,
+    "selection_repeated": false,
+    "weights_written": false,
+    "original_feature_list_sha256": "4292c5abc38bafd86e1a0ffdaf79f6a11839f2fed36840214afeaaf36e76cf78",
+    "original_selection_sha256": "3c601fbac40c70f0b38c2426abfd4dab38f1fca454005942127dff8a539d780e",
+    "frozen_model_code_sha256": {
+      "experiment.py": "9b2997a6ba2b904546b1897e8cace28cdc679b4382bc1ebe6d4985ffdb9b2183",
+      "samples.py": "ce1f3653a2bfabbc7f446ced3ad395c7a64567fea2aa800f6d9a377689a8ccd1",
+      "geometry.py": "3ea3f17d43415ded854a313c5551a60b0e42463995078bf223aa245980759b36"
+    },
+    "sklearn_version": "1.7.2",
+    "feature_order_sha256": "506f0218193a81346502d811e72bf11540f2cace0ba7d5a29785eb8b3ddfbbcf",
+    "audit": "post_fit_reproduction_not_new_model_selection",
+    "evaluation_rows": 206,
+    "evaluation_positive": 33,
+    "expected_eval_ap": 0.7302762063131997,
+    "reproduced_eval_ap": 0.7302762063131997,
+    "all_aggregate_metrics_max_absolute_difference": 5.551115123125783e-17,
+    "original_prediction_max_absolute_difference": 1.1102230246251565e-16,
+    "original_prediction_parity_within_tolerance": true,
+    "tolerance": 1e-12,
+    "passed": true,
+    "development_policy": {
+      "cutoff": 0.95568571118795,
+      "tie_probability": 1.0,
+      "capacity": 20,
+      "nominal_dev_budget": 0.1
+    },
+    "calibration": "not_recalibrated; score is not a validated probability on synthetic scenes",
+    "synthetic_domain_warning": "road vehicle sizes and observation quality differ from sidewalk delivery robots",
+    "score_semantics": "uncalibrated model score for the filtered 3-second / 2-metre clearance proxy; not intervention probability, collision probability, or a control action"
+  }
+}

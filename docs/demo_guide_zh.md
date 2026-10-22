@@ -8,7 +8,7 @@
 完整触发假设、逐场景对照、原因计数和残留限制见[人行道报告](sidewalk_demo_zh.md)与[配对比较](../results/sidewalk/fallback_comparison.json)。原真实研究数据与模型选择不变；用户已于2026-10-23授权公开本项目，发布记录见[publication.json](../publication.json)。
 <!-- request-fallback:end -->
 
-当前主界面为**带独立求助与显式协助模块的人行道配送机器人**：机器人与行人仅在人行道、斑马线通行，所有汽车包括停车仅在机动车道。旧三通道版和城市道路版保留为历史记录，不再由主界面加载。累计82项软件测试通过。[当前场景说明与结果](sidewalk_demo_zh.md) · [四联动画](../demo/sidewalk_scenarios.gif) · [路面分区总览](../demo/sidewalk_atlas.png)
+当前主界面为**带独立求助与显式协助模块的人行道配送机器人**：机器人与行人仅在人行道、斑马线通行，所有汽车包括停车仅在机动车道。旧三通道版和城市道路版保留为历史记录，不再由主界面加载。加入模型文件与下载校验后累计96项软件测试通过。[验证记录](validation.md) · [当前场景说明与结果](sidewalk_demo_zh.md) · [四联动画](../demo/sidewalk_scenarios.gif) · [路面分区总览](../demo/sidewalk_atlas.png)
 
 ## 打开与操作
 
@@ -24,7 +24,15 @@
 
 ## 本地服务
 
-在安装项目依赖并保留原本地提取数据的环境中运行：
+安装项目依赖后，可直接加载本次补充发布的冻结配置模型，**无需下载原始Waymo数据或重新训练**。先核对[模型清单](../models/frozen_histgb_seed42.manifest.json)，确认文件来自可信发布，并阅读[模型用途与许可](../models/README.md)：
+
+```text
+python scripts/serve_demo.py --model-artifact models/frozen_histgb_seed42.joblib --model-manifest models/frozen_histgb_seed42.manifest.json --trust-model-artifact --port 8766
+```
+
+`joblib`反序列化可能执行代码，必须只加载可信来源。哈希用于核对已知发布文件，不能让未知或恶意文件变得安全；`--trust-model-artifact`是显式确认。依赖版本按项目 `requirements.txt`，其中scikit-learn为1.7.2。
+
+已有合法提取数据时，也保留从同一冻结配置拟合的原路径：
 
 ```text
 python scripts/serve_demo.py --samples artifacts/prepared/samples.csv --port 8766
@@ -37,6 +45,8 @@ python scripts/serve_demo.py --samples artifacts/prepared/samples.csv --port 876
 ## 确保用的是学出来的算法
 
 `demo_model.py`按原特征顺序使用194列，只在原训练集857例上重新拟合同一全特征HistGradientBoosting（seed42），不重新选模。训练不使用开发或评估样本，评估数据只在拟合后做一致性审计。206个原评估分数的最大绝对差为1.11×10⁻¹⁶，AP重现为0.7302762063131997，详见[模型一致性记录](../results/simulation/model_parity.json)。
+
+本次权重导出沿用该冻结配置，并单独记录保存/加载核验、文件SHA-256和环境版本，见[模型清单](../models/frozen_histgb_seed42.manifest.json)。加载模型文件不会重训或重新选模；原运行清单的 `no_weights_saved` 只描述当时未保存文件，不代表本次补充发布不存在模型。模型文件包含拟合参数及评分所需元数据，不附原始轨迹、逐场景特征或真实预测表。
 
 模拟器按原评分接口提取当前和过去约一秒的真实观测历史，在满足资格时每秒调用同一模型。逐机器人视线遮挡会屏蔽未见目标，隐藏历史不回填；未来模拟轨迹不进入评分。没有用手写“风险函数”替换模型输出。
 
@@ -124,4 +134,6 @@ python scripts/render_sidewalk_animation.py --input artifacts/sidewalk_gallery.j
 
 [排队模拟](queue_simulation_zh.md)完成24种条件×100种子×5种策略。其30/60秒服务及120秒期限都晚于原标签的三秒预测窗口，只支持事后/离线复核资源规划，不支持实时干预或预防事件。它与动画的15秒协助假设不同，不能混用数值。
 
-原始数据、特征缓存、逐场景真实预测和模型权重不公开。用户已于2026-10-23授权公开本项目，授权范围与实际发布状态见[publication.json](../publication.json)。
+用户已授权公开本项目，并随后明确要求补充原始数据和模型权重。本次公开模型与许可声明；模型整体和下游使用、修改受Waymo非商业协议约束，禁止用于车辆操作或辅助操作、生产系统及商业用途。[模型说明](../models/README.md) · [官方协议](https://waymo.com/open/terms/)
+
+原始数据按协议第2(b)节仅可向已注册并同意协议的接收者分发，故公共仓库提供[官方22分片清单](../configs/womd_download_manifest.json)及授权下载校验工具，不提供原始数据镜像。特征缓存、逐场景真实预测、账号与凭据仍不公开。授权范围与实际发布状态见[publication.json](../publication.json)。

@@ -10,6 +10,7 @@ artifacts/
 *.npz
 *.pkl
 *.joblib
+!models/frozen_histgb_seed42.joblib
 *.parquet
 *.pem
 *.key

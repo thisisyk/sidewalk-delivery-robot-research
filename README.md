@@ -10,7 +10,11 @@
 
 使用 **Waymo Open Motion Dataset** 研究过去一秒的运动状态能否预测未来三秒新发生的近距离交互，以及有限离线复核预算应如何分配。
 
-**当前状态：真实道路数据研究及追加分析已完成；主Demo为带独立求助与显式协助模块的人行道配送机器人，82项软件测试通过。用户已于2026-10-23明确授权新建公开项目。** 仓库地址：[thisisyk/sidewalk-delivery-robot-research](https://github.com/thisisyk/sidewalk-delivery-robot-research)；授权、公开范围与实际发布状态以[publication.json](publication.json)为准。原运行产物中的待审字段保留其生成时的历史状态。
+**当前状态：真实道路数据研究及追加分析已完成；主Demo为带独立求助与显式协助模块的人行道配送机器人，含模型发布与下载校验的96项软件测试通过。用户已于2026-10-23明确授权公开项目并追加发布权重。** 仓库地址：[thisisyk/sidewalk-delivery-robot-research](https://github.com/thisisyk/sidewalk-delivery-robot-research)；授权、公开范围与实际发布状态以[publication.json](publication.json)为准。原运行产物中的待审字段保留其生成时的历史状态。
+
+**模型权重补充发布：** 用户随后明确要求分享模型权重。本次按已冻结的857例训练集、194列特征和HistGB seed42配置重新拟合并导出可加载模型，不重新选模、不改写原评估结果。模型、来源与一致性核验见[模型说明](models/README.md)及[模型清单](models/frozen_histgb_seed42.manifest.json)。原始22个Waymo分片不放入公共仓库；提供[官方对象及校验清单](configs/womd_download_manifest.json)和各自授权下载工具。
+
+**模型仅限非商业研究使用。模型整体及下游使用、修改受 [Waymo 非商业数据协议](https://waymo.com/open/terms/)约束；不得用于车辆操作或辅助操作、生产系统或商业用途。** 模型随附[完整协议](licenses/WAYMO_DATASET_LICENSE_NON_COMMERCIAL_MARCH_2025.txt)与[署名声明](models/NOTICE.txt)，不能按普通无限制开源权重使用。
 
 Waymo 与 Uber Eats 有自动配送合作，但本项目公开数据**没有 Uber Eats 订单归属、真实人工接管或每单成本标签**。原始图片中的小型人行道机器人与道路汽车存在差异，本实验只研究共同的交互预测问题。项目不提供车辆控制功能。
 
@@ -98,6 +102,14 @@ python -m pip install -r requirements.txt
 python -m pip install -e . --no-deps
 ```
 
+只运行交互Demo时，无需下载原始Waymo数据或重新训练。核对[模型清单](models/frozen_histgb_seed42.manifest.json)并确认文件来自可信发布后运行：
+
+```text
+python scripts/serve_demo.py --model-artifact models/frozen_histgb_seed42.joblib --model-manifest models/frozen_histgb_seed42.manifest.json --trust-model-artifact --port 8766
+```
+
+随后访问 `http://127.0.0.1:8766/`。`joblib`反序列化可能执行代码；显式信任参数只用于确认可信来源，哈希校验不能让恶意文件变得安全。该服务仅用于本机合成研究演示，不能连接真实车辆。
+
 从官方渠道注册并下载数据，保留原始文件名：
 
 ```text
@@ -106,6 +118,15 @@ data/womd/training/training.tfrecord-00000-of-01000
 data/womd/validation/validation.tfrecord-00000-of-00150
 ...
 ```
+
+已自行完成Waymo注册、同意协议并通过Google官方工具取得访问权的用户，可按本次22分片清单下载和校验：
+
+```text
+python scripts/download_womd.py --destination data/womd --download --registered-with-waymo
+python scripts/download_womd.py --destination data/womd --verify-only
+```
+
+下载脚本不代替用户接受协议、登录或取得访问权；不会从本仓库提供原始数据镜像。完整步骤见[数据获取](docs/data_access.md)。
 
 解析需要官方 protobuf 类。可安装 `grpcio-tools`，再下载固定提交的八份官方 schema 并编译：
 
@@ -147,12 +168,16 @@ python -m unittest discover -s tests -v
 - `results/real/numeric_audit.json`、`label_audit.json`：独立数值与标量几何核查。
 - `results/real/review_status.json`：后续助手核查与用户发布审批状态。
 - `results/private/`：逐场景预测，仅本地保留。
+- `models/frozen_histgb_seed42.joblib`：本次补充发布的冻结配置重拟合模型；模型清单保存参数、来源、文件校验值和一致性核验。
+- `configs/womd_download_manifest.json`、`scripts/download_womd.py`：22个官方对象的路径与校验清单、授权下载及本地完整性检查工具；不含原始分片。
 
 本次已完成独立公式复算及三个确定性案例的助手核查，未进行人类专家标签有效性研究。复现运行使用新目录，避免覆盖保留的原始结果。查看核查命令与原始自动报告状态的解释，见[验证记录](docs/validation.md)。
 
 ## 发布范围
 
-用户已于2026-10-23授权公开代码、协议、聚合指标、研究报告与明确标注的合成回放。原始数据、特征缓存、逐场景标签与预测、账号信息及权重均不进入发布包。数据及其衍生物受 [Waymo 非商业许可](https://waymo.com/open/terms/) 约束；代码仓库中的任何说明不替代该许可。授权与发布状态见[publication.json](publication.json)。
+用户已于2026-10-23授权公开代码、协议、聚合指标、研究报告与明确标注的合成回放，并随后明确要求补充模型权重。模型按Waymo协议第2(c)节附完整协议、突出用途限制及署名发布。第2(b)节要求原始数据仅向已注册并同意协议的接收者分发，公开GitHub仓库无法限定所有接收者，因此22个原始分片继续本地保留，改为提供官方对象及校验清单与授权下载工具。[官方协议](https://waymo.com/open/terms/)
+
+特征缓存、逐场景真实标签与预测、账号信息和凭据不进入发布包。原运行清单中的 `no_weights_saved` 描述当时没有保存权重的事实；本次新增导出和清单单独留痕，不重写历史文件。任何仓库说明都不替代适用协议；授权与发布状态见[publication.json](publication.json)。
 
 ## 来源
 
