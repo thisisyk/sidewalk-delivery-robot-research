@@ -94,6 +94,8 @@ def main():
                 self.send(200, (ROOT / "demo/example_run.js").read_bytes(), "text/javascript; charset=utf-8")
             elif self.path == "/sidewalk_gallery.js" and gallery_path.is_file():
                 self.send(200, gallery_path.read_bytes(), "text/javascript; charset=utf-8")
+            elif self.path == "/browser-compute.js":
+                self.send(200, (ROOT / "demo/browser-compute.js").read_bytes(), "text/javascript; charset=utf-8")
             elif self.path == "/favicon.ico":
                 self.send(204, b"", "image/x-icon")
             else:

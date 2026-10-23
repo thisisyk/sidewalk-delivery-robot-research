@@ -1,0 +1,73 @@
+{
+  "audit": "browser_data_only_conversion_of_existing_published_weights_no_fit",
+  "browser_model_sha256": "d14266b9469120bfcc477716ab09d2a01c5bb954a60fc6c76f41c4450968440f",
+  "browser_model_bytes": 150844,
+  "source_joblib_sha256": "97d3ee38b81bfbc78739a066214e428d444740a9fc55ff7240250e5d87a76c7a",
+  "all_exported_parameter_and_metadata_values_equal_original": true,
+  "inference_structure_sha256_original": "f0f46f572c5e4298939e2dac77b11856f669427f89c5ec8a664d721506c51123",
+  "inference_structure_sha256_json": "f0f46f572c5e4298939e2dac77b11856f669427f89c5ec8a664d721506c51123",
+  "tree_count": 100,
+  "node_count": 2894,
+  "ordered_features": 194,
+  "feature_order_sha256": "506f0218193a81346502d811e72bf11540f2cace0ba7d5a29785eb8b3ddfbbcf",
+  "simple_imputer_all_statistics_finite": true,
+  "simple_imputer_keeps_empty_features": true,
+  "all_missing_features_imputed_without_dropping_columns": true,
+  "raw_or_prepared_rows_exported": false,
+  "scenario_ids_exported": false,
+  "per_scenario_predictions_exported": false,
+  "model_retrained": false,
+  "browser_inference_requires_sklearn_pandas_or_pickle": false,
+  "tolerance": 1e-12,
+  "passed": true,
+  "cases": {
+    "original_evaluation": {
+      "rows": 206,
+      "max_absolute_score_difference": 5.551115123125783e-17,
+      "other_prediction_fields_equal": true,
+      "passed": true,
+      "native_reference_seconds": 0.1154124999884516,
+      "native_json_seconds": 0.30291799997212365,
+      "positive": 33,
+      "original_frozen_prediction_max_absolute_difference": 1.1102230246251565e-16
+    },
+    "missing_values": {
+      "rows": 387,
+      "max_absolute_score_difference": 1.1102230246251565e-16,
+      "other_prediction_fields_equal": true,
+      "passed": true,
+      "native_reference_seconds": 0.20463419996667653,
+      "native_json_seconds": 0.4639599000220187
+    },
+    "extreme_values": {
+      "rows": 133,
+      "max_absolute_score_difference": 5.551115123125783e-17,
+      "other_prediction_fields_equal": true,
+      "passed": true,
+      "native_reference_seconds": 0.09066649997839704,
+      "native_json_seconds": 0.1357998000457883
+    },
+    "every_original_numerical_split_boundary": {
+      "rows": 4191,
+      "max_absolute_score_difference": 2.220446049250313e-16,
+      "other_prediction_fields_equal": true,
+      "passed": true,
+      "native_reference_seconds": 1.9824907999718562,
+      "native_json_seconds": 5.096712099970318,
+      "all_branch_thresholds_checked": 1397
+    },
+    "new_past_only_multiactor_scenes": {
+      "rows": 128,
+      "max_absolute_score_difference": 2.220446049250313e-16,
+      "other_prediction_fields_equal": true,
+      "passed": true,
+      "native_reference_seconds": 0.09195840003667399,
+      "native_json_seconds": 0.18960310000693426,
+      "original_past_only_feature_extractor_equal": true,
+      "number_of_neighbor_tracks_range": [
+        1,
+        16
+      ]
+    }
+  }
+}

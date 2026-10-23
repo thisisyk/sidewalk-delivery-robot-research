@@ -15,7 +15,8 @@
     "synthetic simulation replays and images",
     "published frozen model weights and accompanying license",
     "official dataset retrieval manifest and checksum tool",
-    "public static research replay site"
+    "public static research replay site",
+    "downloadable frozen JSON model and original Python simulator for browser-local non-commercial personal research experiments"
   ],
   "excluded": [
     "raw Waymo dataset",
@@ -50,14 +51,32 @@
     "official_retrieval_manifest": "configs/womd_download_manifest.json"
   },
   "public_demo": {
-    "authorization": "User requested a shareable demo link for another person over WeChat.",
+    "authorization": "Explicit user request for a publicly accessible fully interactive demo using the trained model and adjustable parameters.",
     "date_client": "2026-10-23",
     "url": "https://thisisyk.github.io/sidewalk-delivery-robot-research/",
-    "mode": "saved_synthetic_replays_only",
+    "mode": "browser_local_model_compute",
     "hosted_model_inference": false,
-    "model_weights_in_site": false,
+    "model_weights_in_site": true,
+    "model_weight_format": "data_only_json_tree_parameters",
+    "model_json_sha256": "d14266b9469120bfcc477716ab09d2a01c5bb954a60fc6c76f41c4450968440f",
     "raw_dataset_in_site": false,
-    "parameter_recomputation": "Local Python model server only",
+    "parameter_recomputation": "Fresh Python simulation and NumPy frozen-model inference in the visitor browser Web Worker",
+    "personal_noncommercial_experiment_only": true,
+    "production_system_or_real_vehicle_use_permitted": false,
+    "license_notice": "Model distribution and downstream use remain subject to the full Waymo non-commercial dataset agreement; browser execution is not a license exemption.",
     "site_build_script": "scripts/build_public_demo.py"
-  }
+  },
+  "public_demo_history": [
+    {
+      "authorization": "User requested a shareable demo link for another person over WeChat.",
+      "date_client": "2026-10-23",
+      "url": "https://thisisyk.github.io/sidewalk-delivery-robot-research/",
+      "mode": "saved_synthetic_replays_only",
+      "hosted_model_inference": false,
+      "model_weights_in_site": false,
+      "raw_dataset_in_site": false,
+      "parameter_recomputation": "Local Python model server only",
+      "site_build_script": "scripts/build_public_demo.py"
+    }
+  ]
 }

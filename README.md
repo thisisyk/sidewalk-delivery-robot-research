@@ -2,7 +2,9 @@
 
 [在线体验 Demo](https://thisisyk.github.io/sidewalk-delivery-robot-research/) · [模型下载及许可](https://github.com/thisisyk/sidewalk-delivery-robot-research/releases/tag/model-v1)
 
-在线版是非商业研究的预计算合成回放，可切换八个场景、播放、暂停、拖动时间和查看协助记录。模型分数来自已保存的真实模型推理。网页不运行新的模型推理；修改密度、阈值或模拟协助方案并重算，需按下文启动本地服务。
+在线版可在访问者自己的浏览器中重新计算八类合成场景，调整密度、阈值、车队与协助方案后，点击“重新计算”生成新轨迹、模型评分和协助记录；无需账号、原始数据或模型推理后端。计算在Web Worker中的Pyodide Python和NumPy执行，使用同一冻结HistGB的194列特征与100棵树，不重新训练。首次加载约17 MB计算环境，提供实际计算进度与取消按钮；[完整操作及计算来源](docs/browser_demo_zh.md)。
+
+初次显示的是明确标注的**默认预览**。只有点击重算并完成后，画面才是当前参数的新结果；预览和已保存动画不会冒充新推理。**浏览器计算同样受Waymo非商业协议约束，禁止车辆操作或辅助操作、生产系统和商业用途**；运行位置不构成许可豁免。
 
 <!-- request-fallback:start -->
 ## 独立行为求助补充
@@ -14,7 +16,7 @@
 
 使用 **Waymo Open Motion Dataset** 研究过去一秒的运动状态能否预测未来三秒新发生的近距离交互，以及有限离线复核预算应如何分配。
 
-**当前状态：真实道路数据研究及追加分析已完成；主Demo为带独立求助与显式协助模块的人行道配送机器人，含模型发布、下载校验与网站发布包检查的98项软件测试通过。用户已于2026-10-23明确授权公开项目并追加发布权重。** 仓库地址：[thisisyk/sidewalk-delivery-robot-research](https://github.com/thisisyk/sidewalk-delivery-robot-research)；授权、公开范围与实际发布状态以[publication.json](publication.json)为准。原运行产物中的待审字段保留其生成时的历史状态。
+**当前状态：真实道路数据研究及追加分析已完成；主Demo为可在浏览器调参重算、带独立求助与显式协助模块的人行道配送机器人。用户已于2026-10-23明确授权公开项目并追加发布权重。** 软件测试与发布核验见[验证记录](docs/validation.md)。仓库地址：[thisisyk/sidewalk-delivery-robot-research](https://github.com/thisisyk/sidewalk-delivery-robot-research)；授权、公开范围与实际发布状态以[publication.json](publication.json)为准。原运行产物中的待审字段保留其生成时的历史状态。
 
 **模型权重补充发布：** 用户随后明确要求分享模型权重。本次按已冻结的857例训练集、194列特征和HistGB seed42配置重新拟合并导出可加载模型，不重新选模、不改写原评估结果。模型、来源与一致性核验见[模型说明](models/README.md)及[模型清单](models/frozen_histgb_seed42.manifest.json)。原始22个Waymo分片不放入公共仓库；提供[官方对象及校验清单](configs/womd_download_manifest.json)和各自授权下载工具。
 
@@ -24,9 +26,9 @@ Waymo 与 Uber Eats 有自动配送合作，但本项目公开数据**没有 Ube
 
 ## 当前主Demo：人行道配送机器人
 
-打开 [`demo/index.html`](demo/index.html)，默认从“密集人群·步道相遇”的首帧开始播放，不跳到协助或到达时刻。可在十字路口、步道转角、建筑盲角、T字路口、垃圾占道、施工窄口、密集人群和综合街角之间切换。**机器人和行人只走人行道与斑马线，汽车包括停放车只在机动车道。** 浅绿步道、灰色机动车道与斑马线分层绘制，机器人绘制为小箱体六轮设备。[当前人行道版说明与结果](docs/sidewalk_demo_zh.md) · [操作指南](docs/demo_guide_zh.md)
+打开[在线Demo](https://thisisyk.github.io/sidewalk-delivery-robot-research/)，默认从“密集人群·步道相遇”的预览首帧开始播放，不跳到协助或到达时刻。可在十字路口、步道转角、建筑盲角、T字路口、垃圾占道、施工窄口、密集人群和综合街角之间选择，再用当前参数重算。**机器人和行人只走人行道与斑马线，汽车包括停放车只在机动车道。** 浅绿步道、灰色机动车道与斑马线分层绘制，机器人绘制为小箱体六轮设备。[当前人行道版说明与结果](docs/sidewalk_demo_zh.md) · [浏览器计算说明](docs/browser_demo_zh.md) · [操作指南](docs/demo_guide_zh.md)
 
-行人随保存轨迹的连续坐标移动；画面默认播放，可暂停、重播和拖动。系统设置“减少动态”时需点击“开始动画”。摆腿只辅助识别人正在行走，实际位置由同ID轨迹帧平滑插值；模型分数保持原帧值，不插补或伪装重算。离线只读取 `sidewalk_gallery.js`，缺失时明确报错，不回退到旧道路场景。本地模型服务支持改变密度、机器人数量、遮挡与协助参数。
+画面默认播放，可暂停、重播和拖动；系统设置“减少动态”时需点击“开始动画”。行人按同ID轨迹帧的连续坐标移动，摆腿只辅助识别；模型分数保持实际计算帧值，不作视觉插补。在线版支持全部参数重算、30/60/120/180秒模拟时长，以及可选的同场景策略对照。直接用 `file://` 打开 [`demo/index.html`](demo/index.html) 时保留只读保存回放；完整浏览器计算应使用在线地址或完整发布包的本地静态HTTP站点。本地Python模型服务仍可使用。
 
 **使用的是原道路数据训练的HistGB，机器人属于未经验证的域外迁移。** 模型只对当前可见的运动交互计算近距分数；步道约束、过街路线、避障、排队和协助均由独立规则执行。当前已处于两米内时仍不评分，但持续停滞、机器人互堵和多次规划失败可经独立行为通道求助。建筑遮挡影响逐机器人观测历史，未见目标不送入模型，也不回填隐藏历史。垃圾、建筑与围挡没有被伪装成车辆训练类别。
 
@@ -97,6 +99,8 @@ AP差值为0.281，配对分片自举95%区间为[0.175, 0.378]；召回差值�
 
 ## 运行
 
+无需安装的浏览器入口为[在线Demo](https://thisisyk.github.io/sidewalk-delivery-robot-research/)，操作见[浏览器计算说明](docs/browser_demo_zh.md)。以下命令用于本地Python服务、研究复现和数据处理。
+
 需要 Python 3.11 或更高版本。标准环境可执行：
 
 ```text
@@ -161,6 +165,7 @@ python -m unittest discover -s tests -v
 ## 研究产物
 
 - `demo/index.html`、`sidewalk_gallery.js`：当前人行道机器人界面与合成回放；含移动行人。
+- `demo/browser-compute.js`、`compute-worker.js`、`browser_bootstrap.py`、`frozen_model.json`：浏览器本机新计算入口与冻结树参数；[浏览器说明](docs/browser_demo_zh.md)记录参数、来源校验和限制。
 - `docs/sidewalk_demo_zh.md`、`results/sidewalk/`：当前合成机制说明、汇总与审计；[协助生命周期审计](results/sidewalk/assistance_audit.json)核对请求、指令与真实执行。
 - `demo/sidewalk_scenarios.gif`、`sidewalk_atlas.png`：当前人行道动画与分区总览。
 - `docs/final_report_zh.md`：已完成核查的最终研究报告；用户已授权本项目公开发布，见[发布记录](publication.json)。

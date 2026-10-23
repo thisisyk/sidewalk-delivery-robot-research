@@ -1,21 +1,61 @@
 {
-  "publication_approval": "explicit_user_request_for_shareable_demo",
+  "publication_approval": "explicit_user_request_for_fully_interactive_public_demo",
   "approval_date_client": "2026-10-23",
-  "prepared_utc": "2026-10-23T02:09:20.587631+00:00",
+  "prepared_utc": "2026-10-23T03:47:47.579794+00:00",
   "repository": "https://github.com/thisisyk/sidewalk-delivery-robot-research",
-  "previous_commit": "a77b657818b47add4394f32c3ad89e992670d047",
+  "previous_commit": "1780a28ffe7545acfc4753a2c719c9711d4139e0",
   "review_archive_sha256": "e623b01f3563f49dbe7eecf4826cf5ce9b7bcfb6747c6fe50a446c4f492bd842",
   "new_files": [
-    ".github/workflows/pages.yml",
-    "scripts/build_public_demo.py",
-    "tests/test_publication_bundle.py"
+    "demo/browser-compute.js",
+    "demo/compute-worker.js",
+    "demo/browser_bootstrap.py",
+    "demo/frozen_model.json",
+    "docs/browser_demo_zh.md",
+    "models/browser_model_parity.json",
+    "scripts/export_browser_model.py",
+    "src/delivery_risk/browser_model.py",
+    "tests/test_browser_model.py",
+    "demo/runtime/pyodide-314.0.7/LICENSE-CPYTHON.txt",
+    "demo/runtime/pyodide-314.0.7/LICENSE-PYODIDE.txt",
+    "demo/runtime/pyodide-314.0.7/NOTICE-RUNTIME.txt",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/001-LICENSE.txt",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/002-LICENSE",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/003-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/004-LICENSE.txt",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/005-LICENSE.txt",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/006-COPYING",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/007-LICENSE",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/008-dragon4_LICENSE.txt",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/009-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/010-LICENSE",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/011-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/012-LICENSE.txt",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/013-LICENSE",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/014-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/015-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/016-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/017-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/018-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/019-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/020-LICENSE.md",
+    "demo/runtime/pyodide-314.0.7/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+    "demo/runtime/pyodide-314.0.7/pyodide-lock.json",
+    "demo/runtime/pyodide-314.0.7/pyodide.asm.mjs",
+    "demo/runtime/pyodide-314.0.7/pyodide.asm.wasm",
+    "demo/runtime/pyodide-314.0.7/pyodide.mjs",
+    "demo/runtime/pyodide-314.0.7/python_stdlib.zip",
+    "demo/runtime/pyodide-314.0.7/runtime-provenance.json"
   ],
   "changed_files": [
+    ".github/workflows/pages.yml",
     "README.md",
     "demo/index.html",
     "docs/demo_guide_zh.md",
     "docs/validation.md",
-    "publication.json"
+    "publication.json",
+    "scripts/build_public_demo.py",
+    "scripts/serve_demo.py",
+    "tests/test_publication_bundle.py"
   ],
   "frozen_results_unchanged": true,
   "frozen_study_code_unchanged": true,
@@ -26,22 +66,110 @@
   "exact_real_scenario_ids_checked": 2370,
   "scenario_id_or_credential_hits": 0,
   "local_software_tests": {
-    "passed": 98,
-    "duration_seconds": 51.435
+    "passed": 107,
+    "duration_seconds": 53.477,
+    "final_license_bundle_recheck": 2
   },
   "model_roundtrip_max_difference": 0.0,
   "model_original_prediction_max_difference": 1.1102230246251565e-16,
   "public_demo": {
-    "authorization": "User requested a shareable demo link for another person over WeChat.",
+    "authorization": "Explicit user request for a publicly accessible fully interactive demo using the trained model and adjustable parameters.",
     "date_client": "2026-10-23",
     "url": "https://thisisyk.github.io/sidewalk-delivery-robot-research/",
-    "mode": "saved_synthetic_replays_only",
+    "mode": "browser_local_model_compute",
     "hosted_model_inference": false,
-    "model_weights_in_site": false,
+    "model_weights_in_site": true,
+    "model_weight_format": "data_only_json_tree_parameters",
+    "model_json_sha256": "d14266b9469120bfcc477716ab09d2a01c5bb954a60fc6c76f41c4450968440f",
     "raw_dataset_in_site": false,
-    "parameter_recomputation": "Local Python model server only",
+    "parameter_recomputation": "Fresh Python simulation and NumPy frozen-model inference in the visitor browser Web Worker",
+    "personal_noncommercial_experiment_only": true,
+    "production_system_or_real_vehicle_use_permitted": false,
+    "license_notice": "Model distribution and downstream use remain subject to the full Waymo non-commercial dataset agreement; browser execution is not a license exemption.",
     "site_build_script": "scripts/build_public_demo.py"
   },
+  "browser_model_parity": {
+    "audit": "browser_data_only_conversion_of_existing_published_weights_no_fit",
+    "browser_model_sha256": "d14266b9469120bfcc477716ab09d2a01c5bb954a60fc6c76f41c4450968440f",
+    "browser_model_bytes": 150844,
+    "source_joblib_sha256": "97d3ee38b81bfbc78739a066214e428d444740a9fc55ff7240250e5d87a76c7a",
+    "all_exported_parameter_and_metadata_values_equal_original": true,
+    "inference_structure_sha256_original": "f0f46f572c5e4298939e2dac77b11856f669427f89c5ec8a664d721506c51123",
+    "inference_structure_sha256_json": "f0f46f572c5e4298939e2dac77b11856f669427f89c5ec8a664d721506c51123",
+    "tree_count": 100,
+    "node_count": 2894,
+    "ordered_features": 194,
+    "feature_order_sha256": "506f0218193a81346502d811e72bf11540f2cace0ba7d5a29785eb8b3ddfbbcf",
+    "simple_imputer_all_statistics_finite": true,
+    "simple_imputer_keeps_empty_features": true,
+    "all_missing_features_imputed_without_dropping_columns": true,
+    "raw_or_prepared_rows_exported": false,
+    "scenario_ids_exported": false,
+    "per_scenario_predictions_exported": false,
+    "model_retrained": false,
+    "browser_inference_requires_sklearn_pandas_or_pickle": false,
+    "tolerance": 1e-12,
+    "passed": true,
+    "cases": {
+      "original_evaluation": {
+        "rows": 206,
+        "max_absolute_score_difference": 5.551115123125783e-17,
+        "other_prediction_fields_equal": true,
+        "passed": true,
+        "native_reference_seconds": 0.1154124999884516,
+        "native_json_seconds": 0.30291799997212365,
+        "positive": 33,
+        "original_frozen_prediction_max_absolute_difference": 1.1102230246251565e-16
+      },
+      "missing_values": {
+        "rows": 387,
+        "max_absolute_score_difference": 1.1102230246251565e-16,
+        "other_prediction_fields_equal": true,
+        "passed": true,
+        "native_reference_seconds": 0.20463419996667653,
+        "native_json_seconds": 0.4639599000220187
+      },
+      "extreme_values": {
+        "rows": 133,
+        "max_absolute_score_difference": 5.551115123125783e-17,
+        "other_prediction_fields_equal": true,
+        "passed": true,
+        "native_reference_seconds": 0.09066649997839704,
+        "native_json_seconds": 0.1357998000457883
+      },
+      "every_original_numerical_split_boundary": {
+        "rows": 4191,
+        "max_absolute_score_difference": 2.220446049250313e-16,
+        "other_prediction_fields_equal": true,
+        "passed": true,
+        "native_reference_seconds": 1.9824907999718562,
+        "native_json_seconds": 5.096712099970318,
+        "all_branch_thresholds_checked": 1397
+      },
+      "new_past_only_multiactor_scenes": {
+        "rows": 128,
+        "max_absolute_score_difference": 2.220446049250313e-16,
+        "other_prediction_fields_equal": true,
+        "passed": true,
+        "native_reference_seconds": 0.09195840003667399,
+        "native_json_seconds": 0.18960310000693426,
+        "original_past_only_feature_extractor_equal": true,
+        "number_of_neighbor_tracks_range": [
+          1,
+          16
+        ]
+      }
+    }
+  },
+  "browser_ui_checks": {
+    "fresh_crowd_120s": true,
+    "fresh_trash_30s_after_cancel": true,
+    "five_policy_comparison": true,
+    "cancel_and_retry": true,
+    "mobile_390px_no_horizontal_overflow": true,
+    "console_errors": 0
+  },
+  "third_party_runtime_original_hashes_verified": true,
   "files": [
     {
       "path": ".github/workflows/ci.yml",
@@ -50,8 +178,8 @@
     },
     {
       "path": ".github/workflows/pages.yml",
-      "sha256": "f62b748a0b09451267fe73740b0322054bdfd6fb70121260a7a46d88fc37a45f",
-      "bytes": 1004
+      "sha256": "c6baa8bc1fe94dc20a9b4cc0dcd264246fa09b5dcd0c2b3d0ca9d6e0c2a325ff",
+      "bytes": 992
     },
     {
       "path": ".gitignore",
@@ -60,8 +188,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "85eea29f3a4f5851fd490f75ed91581ca99142b67912cad1bfee1bba5466d88a",
-      "bytes": 17554
+      "sha256": "523d191c037c2548e5aa040bcec56df3651b1978d2f7049acfd99d4da00e4259",
+      "bytes": 18807
     },
     {
       "path": "configs/protocol.json",
@@ -94,9 +222,24 @@
       "bytes": 34152
     },
     {
+      "path": "demo/browser-compute.js",
+      "sha256": "41f051053d395332395477c87d4c4f83f20d5ebed91a8afdec1695c60d6ba6c0",
+      "bytes": 2560
+    },
+    {
+      "path": "demo/browser_bootstrap.py",
+      "sha256": "5498340e9e222d53d693a884ee9dab3e6eb24ad834d2fade080e3c9663a2c6bf",
+      "bytes": 6395
+    },
+    {
       "path": "demo/browser_preview.png",
       "sha256": "7496fe5f850833fdc7a8dc1886792e726b63b9db235d087966d647d36f7674ce",
       "bytes": 25042
+    },
+    {
+      "path": "demo/compute-worker.js",
+      "sha256": "a284b43b2e5e981ddea2b2f67437b63b9514454e4abee95bbad1ddb1e73014e1",
+      "bytes": 7543
     },
     {
       "path": "demo/example_run.js",
@@ -104,9 +247,14 @@
       "bytes": 455814
     },
     {
+      "path": "demo/frozen_model.json",
+      "sha256": "d14266b9469120bfcc477716ab09d2a01c5bb954a60fc6c76f41c4450968440f",
+      "bytes": 150844
+    },
+    {
       "path": "demo/index.html",
-      "sha256": "e8ebc8dfdc7fbaab18c9ba38bbd444907a9ab9d2a09e0cc74b00108a95ff2c57",
-      "bytes": 79025
+      "sha256": "1d5ef5d9b4b022e8ba42a6a9364f83757239ed63b0444859a595b28e0853e5fd",
+      "bytes": 87376
     },
     {
       "path": "demo/learned_simulation.gif",
@@ -117,6 +265,156 @@
       "path": "demo/learned_simulation.png",
       "sha256": "f1375d20e8bdf6cc69cd6b8b349f3f7dc88d18839330c87d7f395a942d4fd8f6",
       "bytes": 64231
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/LICENSE-CPYTHON.txt",
+      "sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231",
+      "bytes": 13804
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/LICENSE-PYODIDE.txt",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+      "bytes": 16725
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/NOTICE-RUNTIME.txt",
+      "sha256": "8ca43d95fb49c5b59271ece031656fa6ff53f2cd8923ce3a9f3639e2d7573796",
+      "bytes": 1259
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/001-LICENSE.txt",
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec",
+      "bytes": 1018
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/002-LICENSE",
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6",
+      "bytes": 1593
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/003-LICENSE.md",
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f",
+      "bytes": 3511
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/004-LICENSE.txt",
+      "sha256": "1be1df33863f97a7bc1c4d67980bd6c69c9a6fef0a5ee76e6ad6cb91e56e8491",
+      "bytes": 1543
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/005-LICENSE.txt",
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec",
+      "bytes": 1018
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/006-COPYING",
+      "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98",
+      "bytes": 690
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/007-LICENSE",
+      "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af",
+      "bytes": 20785
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/008-dragon4_LICENSE.txt",
+      "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c",
+      "bytes": 1414
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/009-LICENSE.md",
+      "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910",
+      "bytes": 1514
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/010-LICENSE",
+      "sha256": "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9",
+      "bytes": 1543
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/011-LICENSE.md",
+      "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056",
+      "bytes": 1498
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/012-LICENSE.txt",
+      "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55",
+      "bytes": 2266
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/013-LICENSE",
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6",
+      "bytes": 1593
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/014-LICENSE.md",
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f",
+      "bytes": 3511
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/015-LICENSE.md",
+      "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face",
+      "bytes": 2745
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/016-LICENSE.md",
+      "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156",
+      "bytes": 2926
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/017-LICENSE.md",
+      "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918",
+      "bytes": 1154
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/018-LICENSE.md",
+      "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800",
+      "bytes": 1509
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/019-LICENSE.md",
+      "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f",
+      "bytes": 1226
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/THIRD_PARTY_LICENSES/020-LICENSE.md",
+      "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9",
+      "bytes": 332
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "sha256": "a292c1f5d7d8a2208cd5e94fc467604c131cabcd2fc14fed6eefde121e7fabdf",
+      "bytes": 2960568
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/pyodide-lock.json",
+      "sha256": "5dc2fc119108bc148c7457dc86e7675b5c87e1cafd420b9c34c1eaef7b36c010",
+      "bytes": 119077
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/pyodide.asm.mjs",
+      "sha256": "f7cdc8ece80678ceb712f8e65ebe6d3a83203a180c399865f49612a051693635",
+      "bytes": 1250344
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/pyodide.asm.wasm",
+      "sha256": "cc36e3cab04fdfc9a63ff13eb52eae2b911bf46c025cc7b281f394bd3de1d5e6",
+      "bytes": 9598218
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/pyodide.mjs",
+      "sha256": "6f1d60f7bf529beb300f0f47983c921d3982363640ba20af0e38efdddbc66109",
+      "bytes": 17931
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/python_stdlib.zip",
+      "sha256": "fa1957e5777068fc4f7437f96d860ae2fbe9c19732ba06c84e004ec16dd7dd7a",
+      "bytes": 2545637
+    },
+    {
+      "path": "demo/runtime/pyodide-314.0.7/runtime-provenance.json",
+      "sha256": "f68c59c01b317023c899e18ab7242d0d9565f425602ee8ba65e91d7949318082",
+      "bytes": 9050
     },
     {
       "path": "demo/scene_gallery.js",
@@ -179,6 +477,11 @@
       "bytes": 92421
     },
     {
+      "path": "docs/browser_demo_zh.md",
+      "sha256": "cbf230124b12cf44391c5779a81c4d24097f94b0193018c159d40f5749fafbe2",
+      "bytes": 8351
+    },
+    {
       "path": "docs/case_review.md",
       "sha256": "f6afcc7357d9c9c3070357b32c5e9a1f57728fbe34e515ec996092e3c3d55334",
       "bytes": 2027
@@ -190,8 +493,8 @@
     },
     {
       "path": "docs/demo_guide_zh.md",
-      "sha256": "07fe505d09b60cac3a3b5d2e95fa1bd4055961fb587658d8b1e44c1baf7ccb2e",
-      "bytes": 16141
+      "sha256": "47061b44a5f7f31979cf8f4675bbd669574b9d6bd186e18aaa29b2bb50d3125a",
+      "bytes": 17466
     },
     {
       "path": "docs/extension_report_zh.md",
@@ -235,8 +538,8 @@
     },
     {
       "path": "docs/validation.md",
-      "sha256": "3eae151c09368d1cf1d447cebc1a7d0d270b4042a3eb169864dfeab4cee3780a",
-      "bytes": 9603
+      "sha256": "54931ed33dcb7ec53f2612ec920df1f72601a5db47e3b38fbca14d5e54f46e82",
+      "bytes": 10317
     },
     {
       "path": "licenses/WAYMO_DATASET_LICENSE_NON_COMMERCIAL_MARCH_2025.txt",
@@ -252,6 +555,11 @@
       "path": "models/README.md",
       "sha256": "e8bdbbd6a4ac18ce61edeb70619ccc2c81349b798ccd0e9e7ab3332e7ebc611b",
       "bytes": 3013
+    },
+    {
+      "path": "models/browser_model_parity.json",
+      "sha256": "1aa780c6a9efe88f46b44b3707f3ee8d3158f0de486d08233f37bfccd851efc6",
+      "bytes": 2996
     },
     {
       "path": "models/frozen_histgb_seed42.joblib",
@@ -270,8 +578,8 @@
     },
     {
       "path": "publication.json",
-      "sha256": "514dff4750364458a5c66d2f3533b315f28974792545a5ff3f3d9c9d743fb909",
-      "bytes": 3272
+      "sha256": "b28cfab4ce4544a25cf350dc226d7de9f25593b7cdca76c761a93df99c6b04c4",
+      "bytes": 4512
     },
     {
       "path": "pyproject.toml",
@@ -540,8 +848,8 @@
     },
     {
       "path": "scripts/build_public_demo.py",
-      "sha256": "cd2157260486f25342fc7d052ffbfb2b8420259ce5ab5f82161e995f14d491c8",
-      "bytes": 2560
+      "sha256": "51fa99e32c7c35641399d9ec9b8ee0ddd0295e9b756cf6a8d215c59040284d80",
+      "bytes": 5510
     },
     {
       "path": "scripts/build_sidewalk_gallery.py",
@@ -562,6 +870,11 @@
       "path": "scripts/download_womd.py",
       "sha256": "6d2379cd7a93bee230b518a4ae4a359a7bd40e6b7d3d69c239f4b19c735ca450",
       "bytes": 5333
+    },
+    {
+      "path": "scripts/export_browser_model.py",
+      "sha256": "22dc349595422217c91dd86990f666ae7c3533dc84c2f55eba7c9ff637c0c261",
+      "bytes": 5120
     },
     {
       "path": "scripts/export_frozen_model.py",
@@ -625,8 +938,8 @@
     },
     {
       "path": "scripts/serve_demo.py",
-      "sha256": "a681a2ff90b650bff529ba6bf97e22e138f55a20931970ba5b699e0e8eff6d24",
-      "bytes": 7700
+      "sha256": "2358549aedbe13541c9c1dd570a0a75840550628e2504195881949a40f7dc1d8",
+      "bytes": 7867
     },
     {
       "path": "scripts/simulate_review_queue.py",
@@ -652,6 +965,11 @@
       "path": "src/delivery_risk/assistance.py",
       "sha256": "7d25cabc68675ade038909b33ce1e3662beb03dacfb8da0848b04cfcd4d1c52b",
       "bytes": 5362
+    },
+    {
+      "path": "src/delivery_risk/browser_model.py",
+      "sha256": "8b02586fef204068f72dbde2ce571976f4f0a62d8d1e418d2f85e435243c5473",
+      "bytes": 11740
     },
     {
       "path": "src/delivery_risk/demo_model.py",
@@ -719,6 +1037,11 @@
       "bytes": 3564
     },
     {
+      "path": "tests/test_browser_model.py",
+      "sha256": "52674dcd9780d86177ef09fb45e6c9e9dc185c06697919c7695f3a09c7d5346f",
+      "bytes": 8929
+    },
+    {
       "path": "tests/test_dataset_download.py",
       "sha256": "cafa7015f1e06548ef3ce23fedb7281dd3a28fb94f088c87b1aa01b03349d8b9",
       "bytes": 3485
@@ -750,8 +1073,8 @@
     },
     {
       "path": "tests/test_publication_bundle.py",
-      "sha256": "1a8b3b4703fdec15cf2e9080bc20f7e4a8d33f23611b9f141519c38b43dea582",
-      "bytes": 1827
+      "sha256": "9422a57c7ceb6a6d86a1ddbbc8a392fcbb4eccd83d248acfb6d608cc98599971",
+      "bytes": 3176
     },
     {
       "path": "tests/test_science.py",

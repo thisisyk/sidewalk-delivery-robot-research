@@ -1,0 +1,24 @@
+THIRD-PARTY RUNTIME - SEPARATE LICENSES
+
+Pyodide 314.0.7: Mozilla Public License 2.0; complete license:
+LICENSE-PYODIDE.txt. Source and release:
+https://github.com/pyodide/pyodide/tree/314.0.7
+https://github.com/pyodide/pyodide/releases/tag/314.0.7
+
+CPython 3.14.2: Python Software Foundation License Version 2 and the historical
+Python licenses; complete official agreement and copyright notices:
+LICENSE-CPYTHON.txt. Unmodified upstream license source:
+https://raw.githubusercontent.com/python/cpython/v3.14.2/LICENSE
+
+This directory contains unmodified official runtime files and the NumPy wheel
+named in the official pyodide-lock.json. No Waymo records or model parameters
+are in these runtime files. The project's Waymo model agreement does not
+replace the independent licenses of Python, Pyodide, NumPy, or their components.
+
+The Python runtime and standard library are accompanied by LICENSE-CPYTHON.txt;
+python_stdlib.zip itself contains no standalone license file. The NumPy wheel
+retains its embedded license and copyright notices. Its relevant license text
+files are also extracted into THIRD_PARTY_LICENSES/ without modifying package
+payloads.
+
+Official distribution origin: https://cdn.jsdelivr.net/pyodide/v314.0.7/full/

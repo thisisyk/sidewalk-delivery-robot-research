@@ -1,0 +1,186 @@
+{
+  "version": "314.0.7",
+  "python": "3.14.2",
+  "numpy": "2.4.6",
+  "retrieved_utc": "2026-10-23T03:33:45.195024+00:00",
+  "origin": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/",
+  "packages": [
+    "numpy"
+  ],
+  "files": [
+    {
+      "path": "pyodide.mjs",
+      "bytes": 17931,
+      "sha256": "6f1d60f7bf529beb300f0f47983c921d3982363640ba20af0e38efdddbc66109",
+      "source": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyodide.mjs",
+      "official_package_lock_hash_checked": false
+    },
+    {
+      "path": "pyodide.asm.mjs",
+      "bytes": 1250344,
+      "sha256": "f7cdc8ece80678ceb712f8e65ebe6d3a83203a180c399865f49612a051693635",
+      "source": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyodide.asm.mjs",
+      "official_package_lock_hash_checked": false
+    },
+    {
+      "path": "pyodide.asm.wasm",
+      "bytes": 9598218,
+      "sha256": "cc36e3cab04fdfc9a63ff13eb52eae2b911bf46c025cc7b281f394bd3de1d5e6",
+      "source": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyodide.asm.wasm",
+      "official_package_lock_hash_checked": false
+    },
+    {
+      "path": "python_stdlib.zip",
+      "bytes": 2545637,
+      "sha256": "fa1957e5777068fc4f7437f96d860ae2fbe9c19732ba06c84e004ec16dd7dd7a",
+      "source": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/python_stdlib.zip",
+      "official_package_lock_hash_checked": false
+    },
+    {
+      "path": "pyodide-lock.json",
+      "bytes": 119077,
+      "sha256": "5dc2fc119108bc148c7457dc86e7675b5c87e1cafd420b9c34c1eaef7b36c010",
+      "source": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyodide-lock.json",
+      "official_package_lock_hash_checked": false
+    },
+    {
+      "path": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "bytes": 2960568,
+      "sha256": "a292c1f5d7d8a2208cd5e94fc467604c131cabcd2fc14fed6eefde121e7fabdf",
+      "source": "https://cdn.jsdelivr.net/pyodide/v314.0.7/full/numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "official_package_lock_hash_checked": true
+    },
+    {
+      "path": "LICENSE-CPYTHON.txt",
+      "bytes": 13804,
+      "sha256": "b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231",
+      "source": "https://raw.githubusercontent.com/python/cpython/v3.14.2/LICENSE",
+      "official_package_lock_hash_checked": false
+    }
+  ],
+  "embedded_notices_extracted": [
+    {
+      "path": "THIRD_PARTY_LICENSES/001-LICENSE.txt",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy/_core/include/numpy/random/LICENSE.txt",
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/002-LICENSE",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy/ma/LICENSE",
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/003-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy/random/LICENSE.md",
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/004-LICENSE.txt",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/LICENSE.txt",
+      "sha256": "1be1df33863f97a7bc1c4d67980bd6c69c9a6fef0a5ee76e6ad6cb91e56e8491"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/005-LICENSE.txt",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/006-COPYING",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/007-LICENSE",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+      "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/008-dragon4_LICENSE.txt",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/009-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/010-LICENSE",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "sha256": "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/011-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/012-LICENSE.txt",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/013-LICENSE",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/ma/LICENSE",
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/014-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/random/LICENSE.md",
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/015-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+      "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/016-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/017-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/018-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+      "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/019-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f"
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES/020-LICENSE.md",
+      "source_archive": "numpy-2.4.6-cp314-cp314-pyemscripten_2026_0_wasm32.whl",
+      "archive_member": "numpy-2.4.6.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+      "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9"
+    }
+  ],
+  "runtime_license": "LICENSE-PYODIDE.txt",
+  "independent_from_waymo_model_license": true,
+  "python_license": "LICENSE-CPYTHON.txt"
+}

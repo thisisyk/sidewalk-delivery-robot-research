@@ -3,8 +3,8 @@ on:
   push:
     branches: [main]
     paths:
-      - demo/index.html
-      - demo/sidewalk_gallery.js
+      - demo/**
+      - src/delivery_risk/**
       - licenses/**
       - models/NOTICE.txt
       - scripts/build_public_demo.py
