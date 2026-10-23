@@ -8,9 +8,11 @@
 完整触发假设、逐场景对照、原因计数和残留限制见[人行道报告](sidewalk_demo_zh.md)与[配对比较](../results/sidewalk/fallback_comparison.json)。原真实研究数据与模型选择不变；用户已于2026-10-23授权公开本项目，发布记录见[publication.json](../publication.json)。
 <!-- request-fallback:end -->
 
-当前主界面为**带独立求助与显式协助模块的人行道配送机器人**：机器人与行人仅在人行道、斑马线通行，所有汽车包括停车仅在机动车道。旧三通道版和城市道路版保留为历史记录，不再由主界面加载。加入模型文件与下载校验后累计96项软件测试通过。[验证记录](validation.md) · [当前场景说明与结果](sidewalk_demo_zh.md) · [四联动画](../demo/sidewalk_scenarios.gif) · [路面分区总览](../demo/sidewalk_atlas.png)
+当前主界面为**带独立求助与显式协助模块的人行道配送机器人**：机器人与行人仅在人行道、斑马线通行，所有汽车包括停车仅在机动车道。旧三通道版和城市道路版保留为历史记录，不再由主界面加载。加入模型文件、下载校验与网站发布包检查后累计98项软件测试通过。[验证记录](validation.md) · [当前场景说明与结果](sidewalk_demo_zh.md) · [四联动画](../demo/sidewalk_scenarios.gif) · [路面分区总览](../demo/sidewalk_atlas.png)
 
 ## 打开与操作
+
+可直接访问[在线研究 Demo](https://thisisyk.github.io/sidewalk-delivery-robot-research/)，无需安装或登录。公开网页只播放已保存的八场景合成轨迹与模型评分；可切换场景、播放、暂停、拖动、调节播放速度、改变观察视角及查看已记录的协助指令。需要重新推理的参数在静态模式下禁用，避免把未发生的计算显示成新结果。自定义密度、车队、阈值或处理方案时，使用下文的本地服务。
 
 直接打开 [`demo/index.html`](../demo/index.html)。它只读取同目录的 `sidewalk_gallery.js`，默认从“密集人群·步道相遇”的首帧开始播放，不自动跳到协助或成功时刻；缺少该文件时明确报错，不会回退旧道路动画。
 

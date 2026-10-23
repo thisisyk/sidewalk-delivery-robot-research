@@ -14,7 +14,8 @@
     "aggregate evaluation results",
     "synthetic simulation replays and images",
     "published frozen model weights and accompanying license",
-    "official dataset retrieval manifest and checksum tool"
+    "official dataset retrieval manifest and checksum tool",
+    "public static research replay site"
   ],
   "excluded": [
     "raw Waymo dataset",
@@ -47,5 +48,16 @@
     "license_url": "https://waymo.com/open/terms/",
     "reason": "Section 2(b) permits dataset distribution only to registered recipients who agreed to the terms; unrestricted public GitHub download cannot enforce that condition.",
     "official_retrieval_manifest": "configs/womd_download_manifest.json"
+  },
+  "public_demo": {
+    "authorization": "User requested a shareable demo link for another person over WeChat.",
+    "date_client": "2026-10-23",
+    "url": "https://thisisyk.github.io/sidewalk-delivery-robot-research/",
+    "mode": "saved_synthetic_replays_only",
+    "hosted_model_inference": false,
+    "model_weights_in_site": false,
+    "raw_dataset_in_site": false,
+    "parameter_recomputation": "Local Python model server only",
+    "site_build_script": "scripts/build_public_demo.py"
   }
 }

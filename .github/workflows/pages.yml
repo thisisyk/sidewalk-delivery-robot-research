@@ -1,0 +1,39 @@
+name: Publish research demo
+on:
+  push:
+    branches: [main]
+    paths:
+      - demo/index.html
+      - demo/sidewalk_gallery.js
+      - licenses/**
+      - models/NOTICE.txt
+      - scripts/build_public_demo.py
+      - .github/workflows/pages.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/configure-pages@v5
+      - name: Build explicit static publication bundle
+        run: python scripts/build_public_demo.py --output _site
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - name: Deploy research replay
+        id: deployment
+        uses: actions/deploy-pages@v4

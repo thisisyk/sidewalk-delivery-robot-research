@@ -1,5 +1,9 @@
 # 自动配送应用背景下的近距离交互预测
 
+[在线体验 Demo](https://thisisyk.github.io/sidewalk-delivery-robot-research/) · [模型下载及许可](https://github.com/thisisyk/sidewalk-delivery-robot-research/releases/tag/model-v1)
+
+在线版是非商业研究的预计算合成回放，可切换八个场景、播放、暂停、拖动时间和查看协助记录。模型分数来自已保存的真实模型推理。网页不运行新的模型推理；修改密度、阈值或模拟协助方案并重算，需按下文启动本地服务。
+
 <!-- request-fallback:start -->
 ## 独立行为求助补充
 
@@ -10,7 +14,7 @@
 
 使用 **Waymo Open Motion Dataset** 研究过去一秒的运动状态能否预测未来三秒新发生的近距离交互，以及有限离线复核预算应如何分配。
 
-**当前状态：真实道路数据研究及追加分析已完成；主Demo为带独立求助与显式协助模块的人行道配送机器人，含模型发布与下载校验的96项软件测试通过。用户已于2026-10-23明确授权公开项目并追加发布权重。** 仓库地址：[thisisyk/sidewalk-delivery-robot-research](https://github.com/thisisyk/sidewalk-delivery-robot-research)；授权、公开范围与实际发布状态以[publication.json](publication.json)为准。原运行产物中的待审字段保留其生成时的历史状态。
+**当前状态：真实道路数据研究及追加分析已完成；主Demo为带独立求助与显式协助模块的人行道配送机器人，含模型发布、下载校验与网站发布包检查的98项软件测试通过。用户已于2026-10-23明确授权公开项目并追加发布权重。** 仓库地址：[thisisyk/sidewalk-delivery-robot-research](https://github.com/thisisyk/sidewalk-delivery-robot-research)；授权、公开范围与实际发布状态以[publication.json](publication.json)为准。原运行产物中的待审字段保留其生成时的历史状态。
 
 **模型权重补充发布：** 用户随后明确要求分享模型权重。本次按已冻结的857例训练集、194列特征和HistGB seed42配置重新拟合并导出可加载模型，不重新选模、不改写原评估结果。模型、来源与一致性核验见[模型说明](models/README.md)及[模型清单](models/frozen_histgb_seed42.manifest.json)。原始22个Waymo分片不放入公共仓库；提供[官方对象及校验清单](configs/womd_download_manifest.json)和各自授权下载工具。
 

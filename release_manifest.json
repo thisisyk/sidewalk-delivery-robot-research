@@ -1,34 +1,21 @@
 {
-  "publication_approval": "explicit_user_request_for_model_weights",
+  "publication_approval": "explicit_user_request_for_shareable_demo",
   "approval_date_client": "2026-10-23",
-  "prepared_utc": "2026-10-22T21:20:07.501667+00:00",
+  "prepared_utc": "2026-10-23T02:09:20.587631+00:00",
   "repository": "https://github.com/thisisyk/sidewalk-delivery-robot-research",
-  "previous_commit": "e3a260001b34d982f72a5ac655e3e8dcd560cc6e",
+  "previous_commit": "a77b657818b47add4394f32c3ad89e992670d047",
   "review_archive_sha256": "e623b01f3563f49dbe7eecf4826cf5ce9b7bcfb6747c6fe50a446c4f492bd842",
   "new_files": [
-    "configs/womd_download_manifest.json",
-    "licenses/WAYMO_DATASET_LICENSE_NON_COMMERCIAL_MARCH_2025.txt",
-    "models/frozen_histgb_seed42.joblib",
-    "models/frozen_histgb_seed42.manifest.json",
-    "models/model_parity.json",
-    "models/NOTICE.txt",
-    "models/README.md",
-    "scripts/download_womd.py",
-    "scripts/export_frozen_model.py",
-    "src/delivery_risk/model_artifact.py",
-    "tests/test_dataset_download.py",
-    "tests/test_model_artifact.py"
+    ".github/workflows/pages.yml",
+    "scripts/build_public_demo.py",
+    "tests/test_publication_bundle.py"
   ],
   "changed_files": [
-    ".gitignore",
     "README.md",
-    "docs/data_access.md",
+    "demo/index.html",
     "docs/demo_guide_zh.md",
     "docs/validation.md",
-    "publication.json",
-    "pyproject.toml",
-    "requirements.txt",
-    "scripts/serve_demo.py"
+    "publication.json"
   ],
   "frozen_results_unchanged": true,
   "frozen_study_code_unchanged": true,
@@ -39,16 +26,32 @@
   "exact_real_scenario_ids_checked": 2370,
   "scenario_id_or_credential_hits": 0,
   "local_software_tests": {
-    "passed": 96,
-    "duration_seconds": 37.785
+    "passed": 98,
+    "duration_seconds": 51.435
   },
   "model_roundtrip_max_difference": 0.0,
   "model_original_prediction_max_difference": 1.1102230246251565e-16,
+  "public_demo": {
+    "authorization": "User requested a shareable demo link for another person over WeChat.",
+    "date_client": "2026-10-23",
+    "url": "https://thisisyk.github.io/sidewalk-delivery-robot-research/",
+    "mode": "saved_synthetic_replays_only",
+    "hosted_model_inference": false,
+    "model_weights_in_site": false,
+    "raw_dataset_in_site": false,
+    "parameter_recomputation": "Local Python model server only",
+    "site_build_script": "scripts/build_public_demo.py"
+  },
   "files": [
     {
       "path": ".github/workflows/ci.yml",
       "sha256": "2cf29e0108292fd3a4bad146b33fe9077d942f9cbc4c054b07a9c917d54ffb4b",
       "bytes": 559
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "sha256": "f62b748a0b09451267fe73740b0322054bdfd6fb70121260a7a46d88fc37a45f",
+      "bytes": 1004
     },
     {
       "path": ".gitignore",
@@ -57,8 +60,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "49985b9aa3e506ad6d11e8ad28f533a2af9b05ee37e05c0429f762b98e5e2916",
-      "bytes": 17024
+      "sha256": "85eea29f3a4f5851fd490f75ed91581ca99142b67912cad1bfee1bba5466d88a",
+      "bytes": 17554
     },
     {
       "path": "configs/protocol.json",
@@ -102,8 +105,8 @@
     },
     {
       "path": "demo/index.html",
-      "sha256": "7483067d7532f8f2fa7665fa851e18523ac7d5eb0f50371a90547ce4bacc584d",
-      "bytes": 75898
+      "sha256": "e8ebc8dfdc7fbaab18c9ba38bbd444907a9ab9d2a09e0cc74b00108a95ff2c57",
+      "bytes": 79025
     },
     {
       "path": "demo/learned_simulation.gif",
@@ -187,8 +190,8 @@
     },
     {
       "path": "docs/demo_guide_zh.md",
-      "sha256": "e1cdefb32cb76051ad4e0c651440dbfd9512af0a3dda4c56952433504f3f2c80",
-      "bytes": 15612
+      "sha256": "07fe505d09b60cac3a3b5d2e95fa1bd4055961fb587658d8b1e44c1baf7ccb2e",
+      "bytes": 16141
     },
     {
       "path": "docs/extension_report_zh.md",
@@ -232,8 +235,8 @@
     },
     {
       "path": "docs/validation.md",
-      "sha256": "ee87fbcd31960c2479b45f0feedbc41d3c2db45276cb4d69a5a5276bbfb7a306",
-      "bytes": 9318
+      "sha256": "3eae151c09368d1cf1d447cebc1a7d0d270b4042a3eb169864dfeab4cee3780a",
+      "bytes": 9603
     },
     {
       "path": "licenses/WAYMO_DATASET_LICENSE_NON_COMMERCIAL_MARCH_2025.txt",
@@ -267,8 +270,8 @@
     },
     {
       "path": "publication.json",
-      "sha256": "03ae3b022243bf72d163c5a6ca0b7d6308db903560823e615a12873609f86fdf",
-      "bytes": 2721
+      "sha256": "514dff4750364458a5c66d2f3533b315f28974792545a5ff3f3d9c9d743fb909",
+      "bytes": 3272
     },
     {
       "path": "pyproject.toml",
@@ -536,6 +539,11 @@
       "bytes": 6459
     },
     {
+      "path": "scripts/build_public_demo.py",
+      "sha256": "cd2157260486f25342fc7d052ffbfb2b8420259ce5ab5f82161e995f14d491c8",
+      "bytes": 2560
+    },
+    {
       "path": "scripts/build_sidewalk_gallery.py",
       "sha256": "4e8a0f27fa6bb2c3fa0ead0d2fbab3a1a64fdabedee07019abfc18053007e5af",
       "bytes": 11609
@@ -739,6 +747,11 @@
       "path": "tests/test_preparation_guards.py",
       "sha256": "8b21bd8e78a76051c0ebb0d168d5b0bfb85e03b7861d0643ca27243ad27d7a84",
       "bytes": 5004
+    },
+    {
+      "path": "tests/test_publication_bundle.py",
+      "sha256": "1a8b3b4703fdec15cf2e9080bc20f7e4a8d33f23611b9f141519c38b43dea582",
+      "bytes": 1827
     },
     {
       "path": "tests/test_science.py",
